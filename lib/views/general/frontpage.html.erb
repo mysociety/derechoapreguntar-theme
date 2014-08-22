@@ -1,0 +1,68 @@
+<div id="frontpage-intro">
+  <div id="frontpage-intro-lead">
+    <div class="frontpage-lead-cell">
+      <h2>
+        <%= _("Exercise your right to know.") %>
+      </h2>
+      <p class="frontpage-lead-text">
+        <%= _("To get information from public authorities:") %>
+      </p>
+    </div>
+    <div class="frontpage-lead-cell">
+      <p class="frontpage-lead-enum">
+        1
+      </p>
+      <p class="frontpage-lead-text">
+        <%= _("Think of a question for a public authority.") %>
+      </p><span id="frontpage-lead-button">
+      <%= link_to _("Ask") + " »", list_public_bodies_default_path %></span>
+    </div>
+    <div class="frontpage-lead-cell">
+      <p class="frontpage-lead-enum">
+        2
+      </p>
+      <p class="frontpage-lead-text">
+        <%= _("We send the question for you") %>
+      </p>
+    </div>
+    <div class="frontpage-lead-cell">
+      <p class="frontpage-lead-enum">
+        3
+      </p>
+      <p class="frontpage-lead-text">
+        <%= _("We'll notify you when there is an answer.") %>
+      </p><%= link_to _("Will they answer?") + "»", help_requesting_path(:anchor => 'making_requests') %>
+    </div>
+
+  </div>
+
+  <div id="frontpage-intro-sidebar">
+    <div id="frontpage-lead-ad">
+      <h4>
+        Informe De Tu Derecho a Preguntar
+      </h4>
+      <p>
+        De las 300 solicitudes de información válidas recibidas durante 2014, sólo 84 (13%) recibieron una respuesta válida. El silencio administrativo, la mayor problema para el derecho de acceso a la información en Nicaragua, es del 80%. <a href="">Lee nuestro informe completo</a>.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="frontpage-content">
+  <div id="frontpage-search-box">
+    <div id="frontpage-search-label">
+      <h4>
+        <%=  _("Search over requests and authorities:") %>
+      </h4>
+    </div>
+    <div id="frontpage-search-form">
+      <%= form_tag({:action => "search_redirect"}, {:id => "search_form"}) do %>
+      <div>
+        <%= text_field_tag 'query', params[:query], { :size => 80 } %><%= submit_tag _('Search') %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
