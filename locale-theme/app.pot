@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: version 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-26 12:34+0100\n"
+"POT-Creation-Date: 2014-08-26 14:24+0100\n"
 "PO-Revision-Date: 2014-08-26 12:31+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,16 +18,43 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
+msgid "A project by"
+msgstr ""
+
+msgid "API"
+msgstr ""
+
+msgid "About the software"
+msgstr ""
+
 msgid "Ask"
 msgstr ""
 
+msgid "Contact us"
+msgstr ""
+
 msgid "Exercise your right to know."
+msgstr ""
+
+msgid "FOI officers"
+msgstr ""
+
+msgid "Help"
+msgstr ""
+
+msgid "Making requests"
+msgstr ""
+
+msgid "Original theme from {{link}}"
 msgstr ""
 
 msgid "Search"
 msgstr ""
 
 msgid "Search over requests and authorities:"
+msgstr ""
+
+msgid "Theme licensed under CC BY SA 3.0<br/>Creative Commons Attribution Share-Alike"
 msgstr ""
 
 msgid "Think of a question for a public authority."
@@ -43,6 +70,9 @@ msgid "We'll notify you when there is an answer."
 msgstr ""
 
 msgid "Will they answer?"
+msgstr ""
+
+msgid "Your privacy"
 msgstr ""
 
 msgid "unknown status "
