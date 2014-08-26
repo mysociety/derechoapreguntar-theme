@@ -1,13 +1,40 @@
+msgid "A project by"
+msgstr ""
+
+msgid "API"
+msgstr ""
+
+msgid "About the software"
+msgstr ""
+
 msgid "Ask"
 msgstr ""
 
+msgid "Contact us"
+msgstr ""
+
 msgid "Exercise your right to know."
+msgstr ""
+
+msgid "FOI officers"
+msgstr ""
+
+msgid "Help"
+msgstr ""
+
+msgid "Making requests"
+msgstr ""
+
+msgid "Original theme from {{link}}"
 msgstr ""
 
 msgid "Search"
 msgstr ""
 
 msgid "Search over requests and authorities:"
+msgstr ""
+
+msgid "Theme licensed under CC BY SA 3.0<br/>Creative Commons Attribution Share-Alike"
 msgstr ""
 
 msgid "Think of a question for a public authority."
@@ -25,6 +52,8 @@ msgstr ""
 msgid "Will they answer?"
 msgstr ""
 
-msgid "unknown status "
+msgid "Your privacy"
 msgstr ""
 
+msgid "unknown status "
+msgstr ""
