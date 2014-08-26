@@ -1,0 +1,30 @@
+msgid "Ask"
+msgstr "Preguntar"
+
+msgid "Exercise your right to know."
+msgstr "Ejerce tu derecho a saber."
+
+msgid "Search"
+msgstr "Buscar"
+
+msgid "Search over requests and authorities:"
+msgstr "Haz una búsqueda entre las peticiones ya realizadas:"
+
+msgid "Think of a question for a public authority."
+msgstr "Piensa una pregunta para un organismo público."
+
+msgid "To get information from public authorities:"
+msgstr "Para obtener información de instituciones públicas:"
+
+msgid "We send the question for you"
+msgstr "Nosotros enviamos la pregunta por ti."
+
+msgid "We'll notify you when there is an answer."
+msgstr "Te avisamos cuando haya una respuesta."
+
+msgid "Will they answer?"
+msgstr "¿Contestarán?"
+
+msgid "unknown status "
+msgstr ""
+
