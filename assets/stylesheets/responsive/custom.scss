@@ -65,16 +65,20 @@ $action-border: #d69457;
 %menu-item {
   text-decoration: none;
   font-size: 1.1rem;
-  color: transparentize($main_menu-link_text, 0.2);
-  @include ie8 {
-    color: $main_menu-link_text;
+  color: $white;
+  background-color: $main_menu-link_text;
+  @include respond-min( $main_menu-mobile_menu_cutoff ){
+    background-color: $white;
+    color: transparentize($main_menu-link_text, 0.2);
+    @include ie8 {
+      color: $main_menu-link_text;
+    }
+    &:hover{
+       text-decoration: underline;
+        color: transparentize($main_menu-link_text, 0);
+    }
   }
   transition: background-color 0.5s ease-out;
-
-  &:hover{
-     text-decoration: underline;
-      color: transparentize($main_menu-link_text, 0);
-  }
 
 }
 
