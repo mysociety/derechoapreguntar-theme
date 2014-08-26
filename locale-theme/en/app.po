@@ -1,7 +1,30 @@
-# Your theme's locale files will override the core locale files.  This
-# is a good place to put both translations specific to your theme, and
-# "translations" of the core English words (e.g. you might want to
-# call FOI "RTI" throughougout, like this:
+msgid "Ask"
+msgstr ""
 
-msgid "Make and browse Freedom of Information (FOI) requests"
-msgstr "Make and browse Right to Know (RTI) requests"
+msgid "Exercise your right to know."
+msgstr ""
+
+msgid "Search"
+msgstr ""
+
+msgid "Search over requests and authorities:"
+msgstr ""
+
+msgid "Think of a question for a public authority."
+msgstr ""
+
+msgid "To get information from public authorities:"
+msgstr ""
+
+msgid "We send the question for you"
+msgstr ""
+
+msgid "We'll notify you when there is an answer."
+msgstr ""
+
+msgid "Will they answer?"
+msgstr ""
+
+msgid "unknown status "
+msgstr ""
+
