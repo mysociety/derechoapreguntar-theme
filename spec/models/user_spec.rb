@@ -15,6 +15,10 @@ describe User do
          expect(user.identity_card_number).to eq('ABCD1234xyz')
       end
 
+      it 'is not valid if no identity_card_number is present' do
+        expect(User.new).to have(1).error_on(:identity_card_number)
+      end
+
     end
 
 end
