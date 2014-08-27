@@ -1,0 +1,22 @@
+<% @title = _('Change your ID Number on {{site_name}}', :site_name => site_name) %>
+
+<% raise _('internal error') if not @user %>
+
+<div id="change_id_number">
+  <%= form_for(@user, :url => user_update_id_number_path) do |f| %>
+    <%= foi_error_messages_for :user %>
+
+    <div class="form_note">
+      <h1><%= @title %></h1>
+    </div>
+
+    <p>
+      <%= f.label :id_number, _('New ID Number:'), :class => 'form_label' %>
+      <%= f.text_field :id_number, :value => nil %>
+    </p>
+
+    <div class="form_button">
+      <%= f.submit _('Change ID Number') %>
+    </div>
+  <% end %>
+</div>

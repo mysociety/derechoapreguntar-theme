@@ -3,6 +3,10 @@ theme_name.gsub!('-', '_')
 THEME_NAME = theme_name
 
 class ActionController::Base
+    # Prepend lib/app/views to the paths that Rails looks up when searching for
+    # views, allowing us to define plugin-specific MVC in lib/app
+    self.prepend_view_path File.join(File.dirname(__FILE__), 'app/views')
+
     # The following prepends the path of the current theme's views to
     # the "filter_path" that Rails searches when deciding which
     # template to use for a view.  It does so by creating a method
@@ -19,6 +23,14 @@ end
 %w{ . }.each do |dir|
   path = File.join(File.dirname(__FILE__), dir)
   $LOAD_PATH.insert(0, path)
+  ActiveSupport::Dependencies.autoload_paths << path
+  ActiveSupport::Dependencies.autoload_once_paths.delete(path)
+end
+
+# Allow additional models and controllers to be defined in lib/app
+%w{ controllers models views }.each do |dir|
+  path = File.join(File.dirname(__FILE__), 'app', dir)
+  $LOAD_PATH << path
   ActiveSupport::Dependencies.autoload_paths << path
   ActiveSupport::Dependencies.autoload_once_paths.delete(path)
 end
