@@ -15,6 +15,10 @@ describe User do
          expect(user.id_number).to eq('ABCD1234xyz')
       end
 
+      it 'is not valid if no id_number is present' do
+        expect(User.new).to have(1).error_on(:id_number)
+      end
+
     end
 
 end
