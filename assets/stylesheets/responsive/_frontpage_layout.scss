@@ -21,15 +21,21 @@ $dark-blue: #475e90;
 
       @include ie8{
         padding-right: 0.9375em;
+        background: image-url("frontpage-lead-background.png") no-repeat scroll 0 0 transparent;
       }
-      @include lte-ie7{
+      @include lte-ie7 {
         width: 36.813em;
       }
+
     }
     .frontpage-lead-cell {
       padding-bottom: 20px;
       @include respond-min( $main_menu-mobile_menu_cutoff ){
         width: 154px;
+        /* No older IE support for border-box */
+        @include ie8{
+          width: 111px;
+        }
         padding-left: 30px;
         padding-right: 10px;
         float: left;
@@ -43,6 +49,9 @@ $dark-blue: #475e90;
       h2 {
         color: $darkest-blue;
         font-size: 1.4rem;
+        @include ie8{
+          font-size: 1.4em;
+        }
         font-weight: bold;
         @include respond-min( $main_menu-mobile_menu_cutoff ){
           margin-top: 35px;
@@ -56,6 +65,9 @@ $dark-blue: #475e90;
           display: block;
           font-size: 7.5rem;
           line-height: 7.5rem;
+          @include ie8{
+            font-size: 7.5em;
+          }
           margin-top: 20px;
           margin-bottom: 0;
         }
@@ -96,6 +108,7 @@ $dark-blue: #475e90;
       }
     }
 
+
     #frontpage-lead-ad {
       background-color: $darkest-blue;
       text-align: center;
@@ -120,7 +133,6 @@ $dark-blue: #475e90;
 #frontpage-search-box {
   @include grid-row();
   background-color: #D9D9D9;
-  padding: 12px 18px;
   border-radius: 5px;
 
   #frontpage-search-label {
@@ -129,6 +141,13 @@ $dark-blue: #475e90;
       margin-top: 10px;
       @include grid-column(4);
       display: block;
+      @include ie8{
+        padding-right: 0.9375em;
+      }
+      @include lte-ie7{
+        width: 17.438em;
+      }
+
     }
 
   }
@@ -138,6 +157,10 @@ $dark-blue: #475e90;
     @include respond-min( $main_menu-mobile_menu_cutoff ){
       font-size: 1.2rem;
     }
+    @include ie8{
+      font-size: 1.2em;
+    }
+
     color: #3C3C3B;
     line-height: 1.1;
     text-align: right;
@@ -151,6 +174,14 @@ $dark-blue: #475e90;
       form {
         margin: 0;
       }
+
+      @include ie8{
+        padding-left: 0.9375em;
+      }
+      @include lte-ie7 {
+        width: 36.813em;
+      }
+
     }
   }
   input {
@@ -161,9 +192,7 @@ $dark-blue: #475e90;
     margin-right:5px;
   }
   input[type="submit"] {
-      width: 25%;
-      font-size: 16px;
-      float: right;
+    width: 25%;
   }
 }
 
