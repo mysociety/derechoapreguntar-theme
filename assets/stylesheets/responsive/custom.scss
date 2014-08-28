@@ -222,6 +222,7 @@ a.link_button_green_large {
 
 /* Header */
 
+
 #banner_inner {
   background-color: $banner-bg;
 }
@@ -355,11 +356,6 @@ a.link_button_green_large {
 
 
 #banner {
-
-  /* locale border */
-  @include respond-min( $main_menu-mobile_menu_cutoff ){
-    border-top: 4px solid $locale-bg;
-  }
 
   /* Hide the greeting on smaller devices */
   .greeting {
