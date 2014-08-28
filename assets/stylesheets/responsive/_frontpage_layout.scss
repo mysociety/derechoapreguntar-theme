@@ -21,7 +21,7 @@ $dark-blue: #475e90;
 
       @include ie8{
         padding-right: 0.9375em;
-        background: image-url("frontpage-lead-background.png") no-repeat scroll 0 0 transparent;
+        background: image-url("frontpage-lead-background-ie.png") no-repeat scroll 0 0 transparent;
       }
       @include lte-ie7 {
         width: 36.813em;
@@ -32,8 +32,12 @@ $dark-blue: #475e90;
       padding-bottom: 20px;
       @include respond-min( $main_menu-mobile_menu_cutoff ){
         width: 154px;
-        /* No older IE support for border-box */
+        /* We're constraining older IE to a smaller width */
         @include ie8{
+          width: 145px;
+        }
+        /* No older IE support for border-box */
+        @include lte-ie7 {
           width: 111px;
         }
         padding-left: 30px;
