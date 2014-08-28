@@ -26,20 +26,21 @@
         text-align: left;
       }
     }
-   /* @include ie8{
-         #footer-nav ul > li:nth-child(3n+1) {
+    @include ie8{
+       footer-nav > ul > li:nth-child(3n+1) {
            padding-left: 0em;
-           padding-right: 1.40625em;
+           padding-right: 1.25em;
          }
-         #footer-nav ul > li:nth-child(3n+2) {
-           padding-left: 0.46875rem;
-           padding-right: 0.9375rem;
+         #footer-nav > ul > li:nth-child(3n+2) {
+           padding-left: 0.625em;
+           padding-right: 0.625em;
          }
-         #footer-nav ul > li:nth-child(3n) {
-           padding-left: 1.40625em;
+         #footer-nav > ul > li:nth-child(3n) {
+           padding-left: 1.25em;
            padding-right: 0em;
          }
-       }*/
+     }
+
 
     img {
       display: inherit;
