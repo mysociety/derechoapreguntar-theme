@@ -8,5 +8,8 @@ Rails.configuration.to_prepare do
     HelpController.class_eval do
         def terms_of_use
         end
+
+        def privacy_policy
+        end
     end
 end
