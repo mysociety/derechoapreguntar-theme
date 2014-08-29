@@ -8,7 +8,10 @@
         <li><%= link_to_unless_current "Búsqueda avanzada", "/advancedsearch" %></li>
         <li><%= link_to_unless_current "Condiciones de Uso", "/help/terms_of_use" %></li>
         <li><%= link_to_unless_current "Política de privacidad", "/help/privacy_policy" %></li>
+        <li><%= link_to_unless_current _("Basado en Alaveteli"), help_alaveteli_path %></li>
 
+        <li><%= link_to_unless_current _("API para programadores"), help_api_path %>
+          </li>
     </ul>
 
     <h2 id="contact">Contáctanos</h2>
