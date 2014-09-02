@@ -6,11 +6,25 @@
 #
 Rails.configuration.to_prepare do
 
-  User.instance_eval do
+  User.class_eval do
     validates :identity_card_number,
               :presence => {
                 :message => _('Please enter your Identity Card Number')
               }
+
+    after_save :update_censor_rules
+
+    private
+
+    def update_censor_rules
+      censor_rules.where(:text => identity_card_number).first_or_create(
+        :text => identity_card_number,
+        :replacement => _('REDACTED'),
+        :last_edit_editor => THEME_NAME,
+        :last_edit_comment => _('Updated automatically after_save')
+      )
+    end
+
   end
 
 end
