@@ -5,11 +5,26 @@
 # See http://stackoverflow.com/questions/7072758/plugin-not-reloading-in-development-mode
 #
 Rails.configuration.to_prepare do
-    OutgoingMessage.class_eval do
-        # Add intro paragraph to new request template
-        def default_letter
-            return nil if self.message_type == 'followup'
-            #"If you uncomment this line, this text will appear as default text in every message"    
-        end
-    end        
+
+  User.class_eval do
+    validates :identity_card_number,
+              :presence => {
+                :message => _('Please enter your Identity Card Number')
+              }
+
+    after_save :update_censor_rules
+
+    private
+
+    def update_censor_rules
+      censor_rules.where(:text => identity_card_number).first_or_create(
+        :text => identity_card_number,
+        :replacement => _('REDACTED'),
+        :last_edit_editor => THEME_NAME,
+        :last_edit_comment => _('Updated automatically after_save')
+      )
+    end
+
+  end
+
 end
