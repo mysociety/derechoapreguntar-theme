@@ -23,6 +23,7 @@ before_install:
   - cd derechoapreguntar-theme
   - git checkout $CURRENT_SHA
   - popd
+  - cd alaveteli
   - gem update --system 2.1.11
   - gem install rake --version=0.9.2.2
   - git submodule update --init --recursive
