@@ -4,15 +4,14 @@ language: ruby
 #     - master
 rvm:
   - 1.8.7-p374
-  - 1.9.3
-  - 2.0.0
+  # - 1.9.3
+  # - 2.0.0
 env:
   global:
     - S3_REGION=us-east-1
     - S3_BUCKET_NAME=alaveteli-bundle-cache
     - secure: "cbZMhxbih4k2syqykwVprnBBTyD9Rk9pVhwM2W1Oa3Y9QIn79giL2yTUrJi3+bapHHFedWstG1wkLxEalc/Ei1G4vWYDqXiOtdzYR/WMqqCyd8royrkusist+rVcolvZ2dTCu8uvmteQ6sE3/FsoayTlYJmWCNFWhAiWayaai8Q="
 before_install:
-  - git rev-parse HEAD
   - CURRENT_SHA=`git rev-parse HEAD`
   - rm -rfv *
   - git clone -b rails-3-develop https://github.com/mysociety/alaveteli.git
@@ -20,6 +19,7 @@ before_install:
   - mkdir -p lib/themes
   - pushd lib/themes
   - git clone https://github.com/mysociety/derechoapreguntar-theme.git
+  - cd derechoapreguntar-theme
   - git checkout $CURRENT_SHA
   - popd
   - gem update --system 2.1.11
