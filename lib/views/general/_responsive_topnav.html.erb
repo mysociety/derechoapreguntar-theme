@@ -1,0 +1,35 @@
+<div id="topnav">
+  <ul id="navigation">
+    <li class="<%= 'selected' if params[:controller] == 'help' and params[:action] != 'requesting'%>">
+      <%= link_to _("About Us"), help_about_path %>
+    </li>
+
+    <li class="<%= 'selected' if params[:controller] == 'help' and params[:action] == 'requesting'%>">
+      <%= link_to _("How to Request"), help_requesting_path %>
+    </li>
+
+    <li class="<%= 'selected' if params[:controller] == 'public_body' or (params[:controller] == 'request' and !['list'].include?(params[:action])) %>">
+      <%= link_to _("Make a Request"), select_authority_path, :id => 'make-request-link' %>
+    </li>
+
+    <li class="<%= 'selected' if params[:controller] == 'request' and ['list'].include?(params[:action]) %>">
+      <%= link_to _("Browse Requests"), request_list_all_url %>
+    </li>
+
+    <% unless AlaveteliConfiguration::blog_feed.empty? %>
+      <li class="<%= 'selected' if params[:controller] == 'general' and params[:action] == 'blog' %>">
+        <%= link_to _("Read blog"), blog_path %>
+      </li>
+    <% end %>
+
+    <li id="navigation_search">
+      <form id="navigation_search_form" method="post" action="<%= search_redirect_path %>">
+        <label for="navigation_search_button">
+          <img src="/assets/search.png" alt="Search:">
+        </label>
+          <%= text_field_tag 'query', params[:query], { :id => "navigation_search_button", :title => _("type your search term here") } %>
+      </form>
+    </li>
+
+  </ul>
+</div>
