@@ -2,6 +2,27 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe User do
 
+    describe :terms do
+
+      before(:each) do
+        @user_attrs = { :name => 'Rob Smith',
+                        :email => 'rob@localhost',
+                        :password => 'insecurepassword',
+                        :identity_card_number => '201-180954-0009J' }
+      end
+
+      it 'requires the terms to be accepted to be valid' do
+        user = User.new(@user_attrs.merge({ :terms => '0' }))
+        expect(user).to_not be_valid
+      end
+
+      it 'is valid if the terms are accepted' do
+        user = User.new(@user_attrs.merge({ :terms => '1' }))
+        expect(user).to be_valid
+      end
+
+    end
+
     describe :identity_card_number do
 
       it 'has an identity_card_number attribute' do
