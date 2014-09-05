@@ -10,7 +10,7 @@ env:
   global:
     - S3_REGION=us-east-1
     - S3_BUCKET_NAME=alaveteli-bundle-cache
-    - secure: "cbZMhxbih4k2syqykwVprnBBTyD9Rk9pVhwM2W1Oa3Y9QIn79giL2yTUrJi3+bapHHFedWstG1wkLxEalc/Ei1G4vWYDqXiOtdzYR/WMqqCyd8royrkusist+rVcolvZ2dTCu8uvmteQ6sE3/FsoayTlYJmWCNFWhAiWayaai8Q="
+    - secure: "H3/bA0aK9a+/2hpcrBwkWy33a3t65uef2z5bnl2LDKfSWpcIhtc+P4j0A0YXMRMek41WjOhsJL9J8vm5+mp3pwLUtsDVkd+ne5aUhusxmQDtHeV588KlObY0VPCYzD1dChJiM6Vn9Kw/eEd1YigB1RmX7yMTFguYOAMUEdUuzUg="
 before_install:
   - CURRENT_SHA=`git rev-parse HEAD`
   - rm -rfv *
