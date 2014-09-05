@@ -16,6 +16,7 @@ before_install:
   - rm -rfv *
   - git clone -b rails-3-develop https://github.com/mysociety/alaveteli.git
   - cd alaveteli
+  - mkdir -p lib/themes
   - pushd lib/themes
   - git clone https://github.com/mysociety/derechoapreguntar-theme.git
   - git checkout $CURRENT_SHA
