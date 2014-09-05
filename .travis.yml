@@ -16,10 +16,10 @@ before_install:
   - rm -rfv *
   - git clone -b rails-3-develop https://github.com/mysociety/alaveteli.git
   - cd alaveteli
-  - mkdir -p lib/themes
-  - pushd lib/themes
-  - git clone https://github.com/mysociety/derechoapreguntar-theme.git alavetelitheme
-  - cd alavetelitheme
+  - mkdir -p alaveteli-themes
+  - pushd alaveteli-themes
+  - git clone https://github.com/mysociety/derechoapreguntar-theme.git
+  - cd derechoapreguntar-theme
   - git checkout $CURRENT_SHA
   - popd
   - gem update --system 2.1.11
@@ -37,6 +37,7 @@ before_install:
   - sudo apt-get -y install `cut -d " " -f 1 config/packages | egrep -v "(^#|wkhtml|bundler|^ruby$|^ruby1.8$|^rubygems$|^rake)"`
   - RAILS_ENV=test ./script/rails-post-deploy
   - RAILS_ENV=test ./script/update-xapian-index
+  - script/switch-theme.rb derechoapreguntar-theme
 install: echo 'Bundle installed through script/rails-post-deploy'
 script: bundle exec rake spec SPEC=lib/themes/derechoapreguntar-theme/spec
 # notifications:
