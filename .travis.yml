@@ -13,7 +13,7 @@ env:
     - secure: "H3/bA0aK9a+/2hpcrBwkWy33a3t65uef2z5bnl2LDKfSWpcIhtc+P4j0A0YXMRMek41WjOhsJL9J8vm5+mp3pwLUtsDVkd+ne5aUhusxmQDtHeV588KlObY0VPCYzD1dChJiM6Vn9Kw/eEd1YigB1RmX7yMTFguYOAMUEdUuzUg="
 before_install:
   - CURRENT_SHA=`git rev-parse HEAD`
-  - echo "Current sha: $CURRENT_SHA"
+  - echo $CURRENT_SHA
   - rm -rfv *
   - rm -rfv .git
   - git clone -b rails-3-develop https://github.com/mysociety/alaveteli.git
