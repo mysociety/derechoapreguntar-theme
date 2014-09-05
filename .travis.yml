@@ -15,7 +15,6 @@ before_install:
   - CURRENT_SHA=`git rev-parse HEAD`
   - rm -rfv *
   - git clone -b rails-3-develop https://github.com/mysociety/alaveteli.git
-  - cd alaveteli
   - mkdir -p alaveteli-themes
   - pushd alaveteli-themes
   - git clone https://github.com/mysociety/derechoapreguntar-theme.git
