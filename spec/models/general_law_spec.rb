@@ -20,6 +20,16 @@ describe GeneralLaw do
       expect(general_law).to have(1).error_on(:date_of_birth)
     end
 
+    it 'must be a date' do
+      general_law = GeneralLaw.new(:date_of_birth => 'yesterday')
+      expect(general_law).to have(1).error_on(:date_of_birth)
+    end
+
+    it 'must be in the past' do
+      general_law = GeneralLaw.new(:date_of_birth => Date.tomorrow)
+      expect(general_law).to have(1).error_on(:date_of_birth)
+    end
+
   end
 
   describe :marital_status do
