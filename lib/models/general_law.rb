@@ -1,4 +1,6 @@
 class GeneralLaw < ActiveRecord::Base
+  belongs_to :user
+
   validates :date_of_birth,
             :presence => { :message => _('Please enter your date of birth') }
 
