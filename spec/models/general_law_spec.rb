@@ -92,4 +92,14 @@ describe GeneralLaw do
 
   end
 
+  describe :age do
+
+    it 'calculates age from date of birth' do
+      Date.stub!(:today).and_return(Date.parse('2010-06-01'))
+      general_law = GeneralLaw.new(:date_of_birth => Date.parse('2007-04-01'))
+      expect(general_law.age).to eq(3)
+    end
+
+  end
+
 end
