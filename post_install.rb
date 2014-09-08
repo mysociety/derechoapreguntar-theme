@@ -23,3 +23,9 @@ unless table_exists?(:general_laws)
   require File.expand_path migration_file_path, __FILE__
   DerechoaPreguntarThemeCreateGeneralLaws.up
 end
+
+unless column_exists?(:general_laws, :user_id)
+  migration_file_path = '../db/migrate/derechoapreguntar_theme_add_user_id_to_general_laws'
+  require File.expand_path migration_file_path, __FILE__
+  DerechoaPreguntarThemeAddUserIdToGeneralLaws.up
+end

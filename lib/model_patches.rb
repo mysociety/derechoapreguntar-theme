@@ -7,6 +7,10 @@
 Rails.configuration.to_prepare do
 
   User.class_eval do
+    has_one :general_law, :dependent => :destroy,
+                          :validate => true,
+                          :autosave => true
+
     validates :terms,
               :acceptance => {
                 :message => _('Please accept the Terms and Conditions')

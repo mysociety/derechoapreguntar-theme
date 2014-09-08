@@ -83,4 +83,34 @@ describe User do
 
     end
 
+    describe :general_law do
+
+      before(:each) do
+        @user_attrs = { :name => 'Rob Smith',
+                        :email => 'rob@localhost',
+                        :password => 'insecurepassword',
+                        :identity_card_number => 'BOB10341' }
+ 
+        @general_law_attrs = { :date_of_birth => Date.yesterday,
+                               :marital_status => 'single',
+                               :occupation => 'programmer',
+                               :domicile => 'Nicaragua' }
+      end
+
+      it 'has associated general law information' do
+        user = User.new(@user_attrs)
+        user.build_general_law(@general_law_attrs)
+        expect(user.general_law.domicile).to eq('Nicaragua')
+      end
+
+      it 'validates the general law when validated' do
+        user = User.new(@user_attrs)
+        user.build_general_law
+        # expect(user).to_not be_valid
+        user.valid?
+        expect(user.general_law.errors.size).to be >= 1
+      end
+
+    end
+
 end
