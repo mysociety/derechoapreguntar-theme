@@ -13,6 +13,10 @@ class GeneralLaw < ActiveRecord::Base
 
   validate :date_of_birth_in_past
 
+  def age
+    (Date.today - date_of_birth).to_i / 365
+  end
+
   private
 
   def date_of_birth_in_past
