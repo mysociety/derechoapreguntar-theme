@@ -10,4 +10,15 @@ class GeneralLaw < ActiveRecord::Base
 
   validates :domicile,
             :presence => { :message => _('Please enter your domicile') }
+
+  validate :date_of_birth_in_past
+
+  private
+
+  def date_of_birth_in_past
+    if date_of_birth && date_of_birth > Date.today
+      errors.add(:date_of_birth, _('Please enter a valid date of birth'))
+    end
+  end
+
 end
