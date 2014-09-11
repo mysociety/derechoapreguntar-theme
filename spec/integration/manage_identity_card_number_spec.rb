@@ -4,7 +4,7 @@ require File.expand_path(File.join(File.dirname(__FILE__),'..','..','..','..','.
 describe 'Signing up' do
 
   it 'allows the user to specify their identity card number' do
-    visit signup_path
+    visit signin_path
 
     within '#signup' do
       fill_in 'Your e-mail', :with => 'test@localhost'
