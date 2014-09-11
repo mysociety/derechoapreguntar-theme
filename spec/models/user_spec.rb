@@ -105,19 +105,8 @@ describe User do
       end
 
       it 'accepts nested attributes for general law' do
-        params = { :user => {
-                     :name => 'Rob Smith',
-                     :email => 'rob@localhost',
-                     :password => 'insecurepassword',
-                     :identity_card_number => 'BOB10341',
-                     :general_law_attributes => {
-                       :date_of_birth => Date.yesterday,
-                       :marital_status => 'single',
-                       :occupation => 'programmer',
-                       :domicile => 'Nicaragua'
-                     }
-                   }}
-        expect(User.new(params[:user]).general_law.domicile).to eq('Nicaragua')
+        params = @user_attrs.merge(:general_law_attributes => @general_law_attrs)
+        expect(User.new(params).general_law.domicile).to eq('Nicaragua')
       end
 
     end
