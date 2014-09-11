@@ -2,14 +2,19 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe User do
 
-    describe :terms do
+    before(:each) do
+      @user_attrs = { :name => 'Rob Smith',
+                      :email => 'rob@localhost',
+                      :password => 'insecurepassword',
+                      :identity_card_number => 'BOB10341' }
 
-      before(:each) do
-        @user_attrs = { :name => 'Rob Smith',
-                        :email => 'rob@localhost',
-                        :password => 'insecurepassword',
-                        :identity_card_number => '201-180954-0009J' }
-      end
+      @general_law_attrs = { :date_of_birth => Date.yesterday,
+                             :marital_status => 'single',
+                             :occupation => 'programmer',
+                             :domicile => 'Nicaragua' }
+    end
+
+    describe :terms do
 
       it 'requires the terms to be accepted to be valid' do
         user = User.new(@user_attrs.merge({ :terms => '0' }))
@@ -45,11 +50,8 @@ describe User do
     describe 'updating identity_card_number' do
 
       before(:each) do
-        user_attrs = { :name => 'Rob Smith',
-                       :email => 'rob@localhost',
-                       :password => 'insecurepassword',
-                       :identity_card_number => 'BOB10341' }
-        @user = User.new(user_attrs)
+        @user = User.new(@user_attrs)
+        @user.build_general_law(@general_law_attrs)
         @user.save
       end
 
@@ -85,30 +87,21 @@ describe User do
 
     describe :general_law do
 
-      before(:each) do
-        @user_attrs = { :name => 'Rob Smith',
-                        :email => 'rob@localhost',
-                        :password => 'insecurepassword',
-                        :identity_card_number => 'BOB10341' }
- 
-        @general_law_attrs = { :date_of_birth => Date.yesterday,
-                               :marital_status => 'single',
-                               :occupation => 'programmer',
-                               :domicile => 'Nicaragua' }
-      end
-
       it 'has associated general law information' do
         user = User.new(@user_attrs)
         user.build_general_law(@general_law_attrs)
         expect(user.general_law.domicile).to eq('Nicaragua')
       end
 
+      it 'requires the general law information' do
+        expect(User.new(@user_attrs)).to have(1).error_on(:general_law)
+      end
+
       it 'validates the general law when validated' do
         user = User.new(@user_attrs)
         user.build_general_law
-        # expect(user).to_not be_valid
         user.valid?
-        expect(user.general_law.errors.size).to be >= 1
+        expect(user.general_law.errors).to have_at_least(1).item
       end
 
       it 'accepts nested attributes for general law' do
