@@ -23,6 +23,11 @@ Rails.configuration.to_prepare do
                 :message => _('Please enter your Identity Card Number')
               }
 
+    validates :general_law,
+              :presence => {
+                :message => _('Please enter your General Law information')
+              }
+
     after_save :update_censor_rules
 
     private
