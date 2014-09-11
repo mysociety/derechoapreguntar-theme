@@ -2,27 +2,15 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe User do
 
-    before(:each) do
-      @user_attrs = { :name => 'Rob Smith',
-                      :email => 'rob@localhost',
-                      :password => 'insecurepassword',
-                      :identity_card_number => 'BOB10341' }
-
-      @general_law_attrs = { :date_of_birth => Date.yesterday,
-                             :marital_status => 'single',
-                             :occupation => 'programmer',
-                             :domicile => 'Nicaragua' }
-    end
-
     describe :terms do
 
       it 'requires the terms to be accepted to be valid' do
-        user = User.new(@user_attrs.merge({ :terms => '0' }))
+        user = FactoryGirl.build(:user, :terms => '0')
         expect(user).to_not be_valid
       end
 
       it 'is valid if the terms are accepted' do
-        user = User.new(@user_attrs.merge({ :terms => '1' }))
+        user = FactoryGirl.build(:user, :terms => '1')
         expect(user).to be_valid
       end
 
@@ -50,24 +38,22 @@ describe User do
     describe 'updating identity_card_number' do
 
       before(:each) do
-        @user = User.new(@user_attrs)
-        @user.build_general_law(@general_law_attrs)
-        @user.save
+        @user = FactoryGirl.create(:user)
       end
 
       it "creates a censor rule for the user's identity card number" do
-        expect(@user.censor_rules.where(:text => 'BOB10341')).to have(1).item
+        expect(@user.censor_rules.where(:text => '201-180954-0009J')).to have(1).item
       end
 
       it 'creates another censor rule when the user changes identity card number' do
-        @user.update_attribute(:identity_card_number, 'BOB-10341')
-        expect(@user.censor_rules.where(:text => 'BOB10341')).to have(1).item
-        expect(@user.censor_rules.where(:text => 'BOB-10341')).to have(1).item
+        @user.update_attribute(:identity_card_number, '201-180954-0009Z')
+        expect(@user.censor_rules.where(:text => '201-180954-0009J')).to have(1).item
+        expect(@user.censor_rules.where(:text => '201-180954-0009Z')).to have(1).item
       end
 
       it 'does not duplicate censor rules' do
         @user.update_attribute(:identity_card_number, @user.identity_card_number)
-        expect(@user.censor_rules.where(:text => 'BOB10341')).to have(1).item
+        expect(@user.censor_rules.where(:text => '201-180954-0009J')).to have(1).item
       end
 
       it 'creates the censor rule with a replacement message' do
@@ -87,9 +73,16 @@ describe User do
 
     describe :general_law do
 
+      before(:each) do
+        @user_attrs = { :name => 'Rob Smith',
+                        :email => 'rob@localhost',
+                        :password => 'insecurepassword',
+                        :identity_card_number => 'BOB10341' }
+      end
+
       it 'has associated general law information' do
         user = User.new(@user_attrs)
-        user.build_general_law(@general_law_attrs)
+        user.build_general_law(FactoryGirl.attributes_for(:general_law))
         expect(user.general_law.domicile).to eq('Nicaragua')
       end
 
@@ -105,7 +98,7 @@ describe User do
       end
 
       it 'accepts nested attributes for general law' do
-        params = @user_attrs.merge(:general_law_attributes => @general_law_attrs)
+        params = @user_attrs.merge(:general_law_attributes => FactoryGirl.attributes_for(:general_law))
         expect(User.new(params).general_law.domicile).to eq('Nicaragua')
       end
 
