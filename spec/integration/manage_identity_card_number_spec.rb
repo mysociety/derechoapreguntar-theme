@@ -33,7 +33,7 @@ describe 'Managing identity card number' do
 
   it 'allows the user to change their identity card number' do
     @user.visit user_edit_identity_card_number_path
-    @user.fill_in 'New Identity Card Number:', :with => '201-180954-0009J'
+    @user.fill_in 'Identity Card Number:', :with => '201-180954-0009J'
     @user.click_button 'Change Identity Card Number'
     expect(@user.response).to contain('201-180954-0009J')
   end
