@@ -11,6 +11,8 @@ Rails.configuration.to_prepare do
                           :validate => true,
                           :autosave => true
 
+    accepts_nested_attributes_for :general_law
+
     validates :terms,
               :acceptance => {
                 :message => _('Please accept the Terms and Conditions')
