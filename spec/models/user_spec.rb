@@ -111,6 +111,22 @@ describe User do
         expect(user.general_law.errors.size).to be >= 1
       end
 
+      it 'accepts nested attributes for general law' do
+        params = { :user => {
+                     :name => 'Rob Smith',
+                     :email => 'rob@localhost',
+                     :password => 'insecurepassword',
+                     :identity_card_number => 'BOB10341',
+                     :general_law_attributes => {
+                       :date_of_birth => Date.yesterday,
+                       :marital_status => 'single',
+                       :occupation => 'programmer',
+                       :domicile => 'Nicaragua'
+                     }
+                   }}
+        expect(User.new(params[:user]).general_law.domicile).to eq('Nicaragua')
+      end
+
     end
 
 end
