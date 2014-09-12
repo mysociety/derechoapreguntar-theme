@@ -7,6 +7,11 @@
 Rails.configuration.to_prepare do
 
   User.class_eval do
+    validates :terms,
+              :acceptance => {
+                :message => _('Please accept the Terms and Conditions')
+              }
+
     validates :identity_card_number,
               :presence => {
                 :message => _('Please enter your Identity Card Number')

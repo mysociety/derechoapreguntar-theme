@@ -39,6 +39,14 @@
         <%= text_field 'user_signup', 'identity_card_number', { :size => 15, :tabindex => 100 } %>
     </p>
 
+    <p class="form_checkbox">
+        <%= check_box 'user_signup', 'terms', :tabindex => 110 %>
+        <label class="form_label" for="user_signup_terms">
+          <%= _('Please confirm that you have read the <a href="{{url}}">Terms of Use</a>',
+                :url => help_general_path(:action => 'terms_of_use')) %>
+        </label>
+    </p>
+
     <% if @request_from_foreign_country %>
     <%= recaptcha_tags %>
     <% end %>
@@ -46,7 +54,7 @@
     <div class="form_button">
         <%= hidden_field_tag 'token', params[:token], {:id => 'signup_token' } %>
         <%= hidden_field_tag :modal, params[:modal], {:id => 'signup_modal' } %>
-        <%= submit_tag _('Sign up'), :tabindex => 110 %>
+        <%= submit_tag _('Sign up'), :tabindex => 120 %>
     </div>
 
 <% end %>
