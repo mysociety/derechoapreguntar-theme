@@ -12,7 +12,7 @@ describe 'Signing up' do
       fill_in 'Password', :with => 'secret'
       fill_in 'Password: (again)', :with => 'secret'
       fill_in 'Identity Card Number', :with => '000-000000-0000Z'
-      check 'Please confirm that you have read the Terms of Use.'
+      check 'user_signup[terms]'
       click_button 'Sign up'
     end
 
