@@ -28,3 +28,6 @@ unless column_exists?(:general_laws, :user_id)
   require File.expand_path migration_file_path, __FILE__
   DerechoaPreguntarThemeAddUserIdToGeneralLaws.up
 end
+
+# Create any necessary global Censor rules
+require File.expand_path(File.dirname(__FILE__) + '/lib/censor_rules')
