@@ -15,7 +15,8 @@ Rails.configuration.to_prepare do
 
     validates :terms,
               :acceptance => {
-                :message => _('Please accept the Terms and Conditions')
+                :message => _('Please accept the Terms and Conditions'),
+                :on => :create
               }
 
     validates :identity_card_number,

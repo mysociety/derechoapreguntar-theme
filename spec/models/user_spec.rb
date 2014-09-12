@@ -14,6 +14,12 @@ describe User do
         expect(user).to be_valid
       end
 
+      it 'does not validate on update' do
+        user = FactoryGirl.create(:user)
+        user.terms = false
+        expect(user).to be_valid
+      end
+
     end
 
     describe :identity_card_number do
