@@ -20,6 +20,11 @@ describe User do
         expect(user).to be_valid
       end
 
+      it 'does not allow a nil terms parameter' do
+         user = User.new(:terms => nil)
+         expect(user).to have(1).error_on(:terms)
+      end
+
     end
 
     describe :identity_card_number do
