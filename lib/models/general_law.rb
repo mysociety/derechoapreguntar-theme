@@ -19,6 +19,10 @@ class GeneralLaw < ActiveRecord::Base
     (Date.today - date_of_birth).to_i / 365
   end
 
+  def display_attributes
+    attributes.slice('date_of_birth', 'marital_status', 'occupation', 'domicile')
+  end
+
   private
 
   def date_of_birth_in_past

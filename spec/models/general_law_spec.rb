@@ -102,4 +102,17 @@ describe GeneralLaw do
 
   end
 
+  describe :display_attributes do
+
+    it 'strips the attributes of internal information' do
+      general_law = FactoryGirl.build(:general_law)
+      expected = { :date_of_birth => Date.yesterday,
+                   :occupation => 'programmer',
+                   :domicile => 'Nicaragua',
+                   :marital_status => 'single' }.with_indifferent_access
+      expect(general_law.display_attributes).to eql(expected)
+    end
+
+  end
+
 end
