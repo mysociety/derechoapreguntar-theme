@@ -24,7 +24,7 @@ msgid "API para programadores"
 msgstr ""
 
 msgid "About"
-msgstr ""
+msgstr "Quienes somos"
 
 msgid "About Us"
 msgstr "Quiénes somos"
@@ -72,7 +72,7 @@ msgid "Change your password"
 msgstr ""
 
 msgid "Contact us"
-msgstr ""
+msgstr "Contáctanos"
 
 msgid "Credits"
 msgstr ""
@@ -165,7 +165,7 @@ msgid "Please use this email address for all replies to this request:"
 msgstr ""
 
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Política de privacidad"
 
 msgid "REDACTED"
 msgstr ""
@@ -186,7 +186,7 @@ msgid "Sign up"
 msgstr ""
 
 msgid "Terms of Use"
-msgstr ""
+msgstr "Condiciones de Uso"
 
 msgid "Theme licensed under CC BY SA 3.0<br/>Creative Commons Attribution Share-Alike"
 msgstr "Contenido bajo licencia CC BY SA 3.0<br/>Creative Commons Attribution Share-Alike"
