@@ -4,13 +4,67 @@ msgstr ""
 msgid "API"
 msgstr ""
 
+msgid "API para programadores"
+msgstr ""
+
+msgid "About"
+msgstr ""
+
+msgid "About Us"
+msgstr ""
+
 msgid "About the software"
 msgstr ""
 
 msgid "Ask"
 msgstr ""
 
+msgid "Basado en Alaveteli"
+msgstr ""
+
+msgid "Browse Requests"
+msgstr ""
+
+msgid "Change General Law Information"
+msgstr ""
+
+msgid "Change Identity Card Number"
+msgstr ""
+
+msgid "Change profile photo"
+msgstr ""
+
+msgid "Change your General Law information"
+msgstr ""
+
+msgid "Change your General Law information on {{site_name}}"
+msgstr ""
+
+msgid "Change your ID Number"
+msgstr ""
+
+msgid "Change your Identity Card Number on {{site_name}}"
+msgstr ""
+
+msgid "Change your email"
+msgstr ""
+
+msgid "Change your email address used on {{site_name}}"
+msgstr ""
+
+msgid "Change your password"
+msgstr ""
+
 msgid "Contact us"
+msgstr ""
+
+msgid "Credits"
+msgstr ""
+
+msgid "Date of Birth"
+msgstr ""
+
+msgid "Domicile"
 msgstr ""
 
 msgid "Exercise your right to know."
@@ -19,13 +73,91 @@ msgstr ""
 msgid "FOI officers"
 msgstr ""
 
+msgid "General Law"
+msgstr ""
+
+msgid "General Law Information"
+msgstr ""
+
 msgid "Help"
+msgstr ""
+
+msgid "How to Request"
+msgstr ""
+
+msgid "Identity Card Number"
+msgstr ""
+
+msgid "Identity Card Number:"
+msgstr ""
+
+msgid "Is {{email_address}} the wrong address for {{type_of_request}} requests to {{public_body_name}}? If so, please contact us using this form:"
+msgstr ""
+
+msgid "Make a Request"
 msgstr ""
 
 msgid "Making requests"
 msgstr ""
 
+msgid "Marital Status"
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "Occupation"
+msgstr ""
+
 msgid "Original theme from {{link}}"
+msgstr ""
+
+msgid "Password:"
+msgstr ""
+
+msgid "Password: (again)"
+msgstr ""
+
+msgid "Please accept the Terms and Conditions"
+msgstr ""
+
+msgid "Please confirm that you have read the <a href=\"{{url}}\">Terms of Use</a>"
+msgstr ""
+
+msgid "Please enter a valid date of birth"
+msgstr ""
+
+msgid "Please enter your General Law information"
+msgstr ""
+
+msgid "Please enter your Identity Card Number"
+msgstr ""
+
+msgid "Please enter your date of birth"
+msgstr ""
+
+msgid "Please enter your domicile"
+msgstr ""
+
+msgid "Please enter your marital status"
+msgstr ""
+
+msgid "Please enter your occupation"
+msgstr ""
+
+msgid "Please use this email address for all replies to this request:"
+msgstr ""
+
+msgid "Privacy Policy"
+msgstr ""
+
+msgid "REDACTED"
+msgstr ""
+
+msgid "Read blog"
+msgstr ""
+
+msgid "Requestor details"
 msgstr ""
 
 msgid "Search"
@@ -34,16 +166,37 @@ msgstr ""
 msgid "Search over requests and authorities:"
 msgstr ""
 
+msgid "Sign up"
+msgstr ""
+
+msgid "Terms of Use"
+msgstr ""
+
 msgid "Theme licensed under CC BY SA 3.0<br/>Creative Commons Attribution Share-Alike"
+msgstr ""
+
+msgid "Then you can change your email address used on {{site_name}}"
+msgstr ""
+
+msgid "There was an error with the words you entered, please try again."
 msgstr ""
 
 msgid "Think of a question for a public authority."
 msgstr ""
 
+msgid "To change your email address used on {{site_name}}"
+msgstr ""
+
 msgid "To get information from public authorities:"
 msgstr ""
 
+msgid "Updated automatically after_save"
+msgstr ""
+
 msgid "We send the question for you"
+msgstr ""
+
+msgid "We will not reveal your email address to anybody unless you or\\n        the law tell us to (<a href=\"{{url}}\">details</a>). "
 msgstr ""
 
 msgid "We'll notify you when there is an answer."
@@ -52,7 +205,31 @@ msgstr ""
 msgid "Will they answer?"
 msgstr ""
 
+msgid "With the help of"
+msgstr ""
+
+msgid "Your <strong>name will appear publicly</strong>\\n        (<a href=\"{{why_url}}\">why?</a>)\\n        on this website and in search engines. If you\\n        are thinking of using a pseudonym, please\\n        <a href=\"{{help_url}}\">read this first</a>."
+msgstr ""
+
+msgid "Your General Law information was successfully updated"
+msgstr ""
+
+msgid "Your Identification Card Number was successfully updated"
+msgstr ""
+
+msgid "Your e-mail:"
+msgstr ""
+
+msgid "Your name:"
+msgstr ""
+
 msgid "Your privacy"
+msgstr ""
+
+msgid "edit text about you"
+msgstr ""
+
+msgid "type your search term here"
 msgstr ""
 
 msgid "unknown status "
