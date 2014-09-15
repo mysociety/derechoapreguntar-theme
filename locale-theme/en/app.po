@@ -172,9 +172,6 @@ msgstr ""
 msgid "Then you can change your email address used on {{site_name}}"
 msgstr ""
 
-msgid "There was an error with the words you entered, please try again."
-msgstr ""
-
 msgid "Think of a question for a public authority."
 msgstr ""
 

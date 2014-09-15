@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: version 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-15 15:33+0100\n"
+"POT-Creation-Date: 2014-09-15 16:15+0100\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -186,9 +186,6 @@ msgid "Theme licensed under CC BY SA 3.0<br/>Creative Commons Attribution Share-
 msgstr "Contenido bajo licencia CC BY SA 3.0<br/>Creative Commons Attribution Share-Alike"
 
 msgid "Then you can change your email address used on {{site_name}}"
-msgstr ""
-
-msgid "There was an error with the words you entered, please try again."
 msgstr ""
 
 msgid "Think of a question for a public authority."
