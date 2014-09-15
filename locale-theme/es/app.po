@@ -1,8 +1,174 @@
+# derechoapreguntar-theme
+# Copyright (C) 2014 mySociety
+# This file is distributed under the same license as the derechapreguntar-theme package.
+#
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: version 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-09-15 16:15+0100\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "A project by"
+msgstr "Un proyecto de"
+
+msgid "API"
+msgstr ""
+
+msgid "About"
+msgstr "Quienes somos"
+
+msgid "About Us"
+msgstr "Quiénes somos"
+
+msgid "About the software"
+msgstr "Basado en Alaveteli"
+
 msgid "Ask"
 msgstr "Preguntar"
 
+msgid "Browse Requests"
+msgstr "Buscar solicitudes"
+
+msgid "Change General Law Information"
+msgstr ""
+
+msgid "Change Identity Card Number"
+msgstr ""
+
+msgid "Change profile photo"
+msgstr ""
+
+msgid "Change your General Law information"
+msgstr ""
+
+msgid "Change your General Law information on {{site_name}}"
+msgstr ""
+
+msgid "Change your ID Number"
+msgstr ""
+
+msgid "Change your Identity Card Number on {{site_name}}"
+msgstr ""
+
+msgid "Change your email"
+msgstr ""
+
+msgid "Change your email address used on {{site_name}}"
+msgstr ""
+
+msgid "Change your password"
+msgstr ""
+
+msgid "Contact us"
+msgstr "Contáctanos"
+
+msgid "Credits"
+msgstr ""
+
+msgid "Date of Birth"
+msgstr ""
+
+msgid "Domicile"
+msgstr ""
+
 msgid "Exercise your right to know."
 msgstr "Ejerce tu derecho a saber."
+
+msgid "FOI officers"
+msgstr "Información para instituciones"
+
+msgid "General Law"
+msgstr ""
+
+msgid "General Law Information"
+msgstr ""
+
+msgid "Help"
+msgstr ""
+
+msgid "How to Request"
+msgstr "Guía para solicitantes"
+
+msgid "Identity Card Number"
+msgstr ""
+
+msgid "Identity Card Number:"
+msgstr ""
+
+msgid "Is {{email_address}} the wrong address for {{type_of_request}} requests to {{public_body_name}}? If so, please contact us using this form:"
+msgstr ""
+
+msgid "Make a Request"
+msgstr "Solicitar información"
+
+msgid "Making requests"
+msgstr "Guía para solicitantes"
+
+msgid "Marital Status"
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "Occupation"
+msgstr ""
+
+msgid "Original theme from {{link}}"
+msgstr ""
+
+msgid "Password:"
+msgstr ""
+
+msgid "Password: (again)"
+msgstr ""
+
+msgid "Please accept the Terms and Conditions"
+msgstr ""
+
+msgid "Please confirm that you have read the <a href=\"{{url}}\">Terms of Use</a>"
+msgstr ""
+
+msgid "Please enter a valid date of birth"
+msgstr ""
+
+msgid "Please enter your General Law information"
+msgstr ""
+
+msgid "Please enter your Identity Card Number"
+msgstr ""
+
+msgid "Please enter your date of birth"
+msgstr ""
+
+msgid "Please enter your domicile"
+msgstr ""
+
+msgid "Please enter your marital status"
+msgstr ""
+
+msgid "Please enter your occupation"
+msgstr ""
+
+msgid "Please use this email address for all replies to this request:"
+msgstr ""
+
+msgid "Privacy Policy"
+msgstr "Política de privacidad"
+
+msgid "REDACTED"
+msgstr ""
+
+msgid "Read blog"
+msgstr ""
+
+msgid "Requestor details"
+msgstr ""
 
 msgid "Search"
 msgstr "Buscar"
@@ -10,14 +176,35 @@ msgstr "Buscar"
 msgid "Search over requests and authorities:"
 msgstr "Haz una búsqueda entre las peticiones ya realizadas:"
 
+msgid "Sign up"
+msgstr ""
+
+msgid "Terms of Use"
+msgstr "Condiciones de Uso"
+
+msgid "Theme licensed under CC BY SA 3.0<br/>Creative Commons Attribution Share-Alike"
+msgstr "Contenido bajo licencia CC BY SA 3.0<br/>Creative Commons Attribution Share-Alike"
+
+msgid "Then you can change your email address used on {{site_name}}"
+msgstr ""
+
 msgid "Think of a question for a public authority."
 msgstr "Piensa una pregunta para un organismo público."
+
+msgid "To change your email address used on {{site_name}}"
+msgstr ""
 
 msgid "To get information from public authorities:"
 msgstr "Para obtener información de instituciones públicas:"
 
+msgid "Updated automatically after_save"
+msgstr ""
+
 msgid "We send the question for you"
 msgstr "Nosotros enviamos la pregunta por ti."
+
+msgid "We will not reveal your email address to anybody unless you or\\n        the law tell us to (<a href=\"{{url}}\">details</a>). "
+msgstr ""
 
 msgid "We'll notify you when there is an answer."
 msgstr "Te avisamos cuando haya una respuesta."
@@ -25,6 +212,37 @@ msgstr "Te avisamos cuando haya una respuesta."
 msgid "Will they answer?"
 msgstr "¿Contestarán?"
 
-msgid "unknown status "
+msgid "With the help of"
+msgstr "Con la ayuda de"
+
+msgid "Your <strong>name will appear publicly</strong>\\n        (<a href=\"{{why_url}}\">why?</a>)\\n        on this website and in search engines. If you\\n        are thinking of using a pseudonym, please\\n        <a href=\"{{help_url}}\">read this first</a>."
+msgstr ""
+"<strong>Tu nombre aparecerá públicamente</strong> \n"
+"        (<a href=\"{{why_url}}\">¿por qué?</a>)\n"
+"        en esta web y en motores de búsqueda. Si estás\n"
+"       pensando en utilizar un seudónimo, por favor \n"
+"        <a href=\"{{help_url}}\">lee esto primero</a>."
+
+msgid "Your General Law information was successfully updated"
 msgstr ""
 
+msgid "Your Identification Card Number was successfully updated"
+msgstr ""
+
+msgid "Your e-mail:"
+msgstr ""
+
+msgid "Your name:"
+msgstr ""
+
+msgid "Your privacy"
+msgstr "Tu privacidad"
+
+msgid "edit text about you"
+msgstr ""
+
+msgid "type your search term here"
+msgstr ""
+
+msgid "unknown status "
+msgstr ""
