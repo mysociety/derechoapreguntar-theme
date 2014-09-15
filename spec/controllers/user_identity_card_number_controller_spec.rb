@@ -5,7 +5,7 @@ describe UserIdentityCardNumberController do
   describe :edit do
 
     before(:each) do
-      @user = FactoryGirl.create(:user, :identity_card_number => '201-180954-0009J')
+      @user = FactoryGirl.create(:user)
       session[:user_id] = @user.id
     end
 
@@ -36,7 +36,7 @@ describe UserIdentityCardNumberController do
   describe :update do
 
     before(:each) do
-      @user = FactoryGirl.create(:user, :identity_card_number => '201-180954-0009J')
+      @user = FactoryGirl.create(:user)
       session[:user_id] = @user.id
     end
 

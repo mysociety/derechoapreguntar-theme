@@ -7,6 +7,12 @@
 Rails.configuration.to_prepare do
 
   User.class_eval do
+    has_one :general_law, :dependent => :destroy,
+                          :validate => true,
+                          :autosave => true
+
+    accepts_nested_attributes_for :general_law
+
     validates :terms,
               :acceptance => {
                 :message => _('Please accept the Terms and Conditions')
@@ -15,6 +21,11 @@ Rails.configuration.to_prepare do
     validates :identity_card_number,
               :presence => {
                 :message => _('Please enter your Identity Card Number')
+              }
+
+    validates :general_law,
+              :presence => {
+                :message => _('Please enter your General Law information')
               }
 
     after_save :update_censor_rules
