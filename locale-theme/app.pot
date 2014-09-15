@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: version 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-15 15:14+0100\n"
+"POT-Creation-Date: 2014-09-15 15:33+0100\n"
 "PO-Revision-Date: 2014-08-26 12:31+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,9 +24,6 @@ msgstr ""
 msgid "API"
 msgstr ""
 
-msgid "API para programadores"
-msgstr ""
-
 msgid "About"
 msgstr ""
 
@@ -37,9 +34,6 @@ msgid "About the software"
 msgstr ""
 
 msgid "Ask"
-msgstr ""
-
-msgid "Basado en Alaveteli"
 msgstr ""
 
 msgid "Browse Requests"

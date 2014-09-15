@@ -4,9 +4,6 @@ msgstr ""
 msgid "API"
 msgstr ""
 
-msgid "API para programadores"
-msgstr ""
-
 msgid "About"
 msgstr ""
 
@@ -17,9 +14,6 @@ msgid "About the software"
 msgstr ""
 
 msgid "Ask"
-msgstr ""
-
-msgid "Basado en Alaveteli"
 msgstr ""
 
 msgid "Browse Requests"
