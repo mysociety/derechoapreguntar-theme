@@ -2,7 +2,10 @@
 
 def column_exists?(table, column)
   # TODO: ActiveRecord 3 includes "column_exists?" method on `connection`
-  ActiveRecord::Base.connection.columns(table.to_sym).collect{|c| c.name.to_sym}.include?(column)
+  if table_exists?(table)
+      ActiveRecord::Base.connection.columns(table.to_sym).collect{|c| c.name.to_sym}.include?(column)
+  end
+
 end
 
 def table_exists?(table)
