@@ -47,6 +47,10 @@
 
           <%= render :partial => 'general_law_fields', :locals => { :f => general_law_form } %>
 
+          <div class="form_item_note">
+            <p><%= _(link_to 'Why are we asking for this?', help_privacy_path) %></p>
+          </div>
+
       </fieldset>
     <% end %>
 
