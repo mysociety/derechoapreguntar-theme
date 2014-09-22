@@ -548,6 +548,11 @@ a.link_to_this {
 
 /* Help pages */
 
+.controller_help {
+  text-align: justify;
+}
+
+
 dt {
   color: $heading-color;
   font-weight: 700;
