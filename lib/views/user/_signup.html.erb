@@ -56,8 +56,10 @@
 
     <p class="form_checkbox">
         <%= f.check_box :terms, :tabindex => 110 %>
-        <%= f.label :terms, _('Please confirm that you have read the <a href="{{url}}">Terms of Use</a>',
-                      :url => help_general_path(:action => 'terms_of_use')) %>
+        <%= f.label :terms, _('Please confirm that you have read the <a href="{{terms_url}}">Terms of Use</a> and <a href="{{privacy_url}}">Privacy Policy</a>.',
+                  :terms_url => help_general_path(:action => 'terms_of_use'),
+                  :privacy_url => help_general_path(:action => 'privacy_policy')) %>
+
     </p>
 
     <% if @request_from_foreign_country %>
