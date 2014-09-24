@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: version 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-15 16:15+0100\n"
+"POT-Creation-Date: 2014-09-24 09:15+0100\n"
 "PO-Revision-Date: 2014-08-26 12:31+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,6 +31,9 @@ msgid "About Us"
 msgstr ""
 
 msgid "About the software"
+msgstr ""
+
+msgid "Additional Information"
 msgstr ""
 
 msgid "Ask"
@@ -135,7 +138,7 @@ msgstr ""
 msgid "Please accept the Terms and Conditions"
 msgstr ""
 
-msgid "Please confirm that you have read the <a href=\"{{url}}\">Terms of Use</a>"
+msgid "Please confirm that you have read the <a href=\"{{terms_url}}\">Terms of Use</a> and <a href=\"{{privacy_url}}\">Privacy Policy</a>."
 msgstr ""
 
 msgid "Please enter a valid date of birth"
