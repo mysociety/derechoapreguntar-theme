@@ -43,7 +43,7 @@ describe UserIdentityCardNumberController do
     it 'requires login' do
       session[:user_id] = nil
 
-      put :update, { :user => { :identity_card_number => '123456789' } }
+      put :update, { :user => { :identity_card_number => '1234-567891-2345A' } }
 
       post_redirect = PostRedirect.get_last_post_redirect
       expect(response).to redirect_to(
@@ -58,8 +58,8 @@ describe UserIdentityCardNumberController do
     end
 
     it 'changes the users Identity Card Number' do
-      put :update, { :user => { :identity_card_number => '123456789' } }
-      expect(User.find(@user.id).identity_card_number).to eql('123456789')
+      put :update, { :user => { :identity_card_number => '123-456789-1234A' } }
+      expect(User.find(@user.id).identity_card_number).to eql('123-456789-1234A')
     end
 
     it 'does not accept a blank Identity Card Number' do
@@ -68,12 +68,12 @@ describe UserIdentityCardNumberController do
     end
 
     it 'notifies the user that the update was successful' do
-      put :update, { :user => { :identity_card_number => '123456789' } }
+      put :update, { :user => { :identity_card_number => '123-456789-1234A' } }
       expect(flash[:notice]).to_not be_nil
     end
 
     it 'redirects to the user profile page after updating successfuly' do
-      put :update, { :user => { :identity_card_number => '123456789' } }
+      put :update, { :user => { :identity_card_number => '123-456789-1234A' } }
       path = show_user_profile_path(:url_name => @user.url_name)
       expect(response).to redirect_to(path)
     end
