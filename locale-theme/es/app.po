@@ -5,9 +5,9 @@
 # Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: derechoapreguntar-theme\n"
+"Project-Id-Version: version 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-15 16:15+0100\n"
+"POT-Creation-Date: 2014-09-24 09:15+0100\n"
 "PO-Revision-Date: 2014-09-15 15:30+0000\n"
 "Last-Translator: louisecrow <louise@mysociety.org>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/derechoapreguntar-theme/language/es/)\n"
@@ -31,6 +31,9 @@ msgstr "Quiénes somos"
 
 msgid "About the software"
 msgstr "Basado en Alaveteli"
+
+msgid "Additional Information"
+msgstr ""
 
 msgid "Ask"
 msgstr "Preguntar"
@@ -134,7 +137,7 @@ msgstr ""
 msgid "Please accept the Terms and Conditions"
 msgstr ""
 
-msgid "Please confirm that you have read the <a href=\"{{url}}\">Terms of Use</a>"
+msgid "Please confirm that you have read the <a href=\"{{terms_url}}\">Terms of Use</a> and <a href=\"{{privacy_url}}\">Privacy Policy</a>."
 msgstr ""
 
 msgid "Please enter a valid date of birth"
