@@ -9,7 +9,7 @@
     </li>
 
     <li class="<%= 'selected' if params[:controller] == 'public_body' or (params[:controller] == 'request' and !['list'].include?(params[:action])) %>">
-      <%= link_to _("Make a Request"), select_authority_path, :id => 'make-request-link' %>
+      <%= link_to _("Make a Request"), list_public_bodies_default_path, :id => 'make-request-link' %>
     </li>
 
     <li class="<%= 'selected' if params[:controller] == 'request' and ['list'].include?(params[:action]) %>">
