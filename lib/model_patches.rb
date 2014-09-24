@@ -22,7 +22,12 @@ Rails.configuration.to_prepare do
 
     validates :identity_card_number,
               :presence => {
-                :message => _('Please enter your Identity Card Number')
+                :message => _('Please enter your Identity Card number')
+              },
+              :format => {
+                :with => /\A\d\d\d-\d\d\d\d\d\d-\d\d\d\d[A-Z]\z/,
+                :message => _("Please enter your Identity Card number in the correct format"),
+                :allow_blank => true
               }
 
     validates :general_law,

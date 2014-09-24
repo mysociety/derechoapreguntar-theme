@@ -30,18 +30,30 @@ describe User do
     describe :identity_card_number do
 
       it 'has an identity_card_number attribute' do
-        user = User.new(:identity_card_number => 'ABCD1234xyz')
-        expect(user.identity_card_number).to eq('ABCD1234xyz')
+        user = User.new(:identity_card_number => '123-456789-1234A')
+        expect(user.identity_card_number).to eq('123-456789-1234A')
       end
 
       it 'can be set' do
          user = User.new
-         user.identity_card_number = 'ABCD1234xyz'
-         expect(user.identity_card_number).to eq('ABCD1234xyz')
+         user.identity_card_number = '123-456789-1234A'
+         expect(user.identity_card_number).to eq('123-456789-1234A')
       end
 
       it 'is not valid if no identity_card_number is present' do
         expect(User.new).to have(1).error_on(:identity_card_number)
+      end
+
+      it 'does not allow an invalid format' do
+          user = User.new
+          user.identity_card_number = 'ABCD1234xyz'
+          expect(user).to have(1).error_on(:identity_card_number)
+      end
+
+      it 'allows a valid format' do
+          user = User.new
+          user.identity_card_number = '123-456789-1234A'
+          expect(user).to have(0).errors_on(:identity_card_number)
       end
 
     end
@@ -88,7 +100,7 @@ describe User do
         @user_attrs = { :name => 'Rob Smith',
                         :email => 'rob@localhost',
                         :password => 'insecurepassword',
-                        :identity_card_number => 'BOB10341' }
+                        :identity_card_number => '123-456789-1234A' }
       end
 
       it 'has associated general law information' do

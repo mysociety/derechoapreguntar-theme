@@ -43,7 +43,7 @@
             makes more sense to be in the GeneralLaw fieldset.
           %>
           <%= f.label :identity_card_number, _('Identity Card Number') %>
-          <%= f.text_field :identity_card_number, { :size => 15, :tabindex => 100 } %>
+          <%= f.text_field :identity_card_number, { :size => 15, :tabindex => 100, :placeholder => '999-999999-9999A' } %>
 
           <%= render :partial => 'general_law_fields', :locals => { :f => general_law_form } %>
 

@@ -12,7 +12,7 @@
     <p>
       <%= f.label :identity_card_number, _('Identity Card Number:'),
                   :class => 'form_label' %>
-      <%= f.text_field :identity_card_number, :value => @user.identity_card_number %>
+      <%= f.text_field :identity_card_number, :value => @user.identity_card_number,  :placeholder => '999-999999-9999A' %>
     </p>
 
     <div class="form_button">
