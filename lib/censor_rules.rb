@@ -1,3 +1,6 @@
+theme_name = File.split(File.expand_path("../..", __FILE__))[1]
+theme_name.gsub!('-', '_')
+THEME_NAME = theme_name
 # If not already created, make a CensorRule that hides personal information
 regexp = '={67}\s*\n(?:[^\n]*?#[^\n]*?: ?[^\n]*\n){3,10}[^\n]*={67}'
 
