@@ -1,4 +1,4 @@
-PublicBodyCategories.add(:es, [
+PublicBodyCategories.add(:es_NI, [
     "Organismos públicos",
         [ "poderes_del_estado", "Poderes del Estado", "Un Poder del Estado" ],
         [ "ministerios_de_estado", "Ministerios de Estado", "Un Ministerio de Estado"],
