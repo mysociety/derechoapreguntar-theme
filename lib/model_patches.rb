@@ -35,6 +35,12 @@ Rails.configuration.to_prepare do
                 :message => _('Please enter your General Law information')
               }
 
+    validates :name,
+              :format => {
+                :with => /\s/,
+                :message => _("Please enter your full name - it is required by law when making a request") }
+
+
     after_save :update_censor_rules
 
     private
