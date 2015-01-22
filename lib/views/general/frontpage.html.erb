@@ -45,6 +45,10 @@
         De las 300 solicitudes de información válidas recibidas durante 2014, sólo 84 (13%) recibieron una respuesta válida. El silencio administrativo, la mayor problema para el derecho de acceso a la información en Nicaragua, es del 80%. <a href="">Lee nuestro informe completo</a>.
       </p>
     </div>
+    <%= image_tag "facebook-16.png", :alt => "facebook icon", :class => "facebook-icon" %> <a href="https://facebook.com/"><%= _("Facebook page") %></a>
+    <% unless AlaveteliConfiguration::twitter_username.blank? %>
+   <%= image_tag "twitter-16.png", :alt => "twitter icon", :class => "twitter-icon" %> <a href="https://twitter.com/<%= AlaveteliConfiguration::twitter_username %>"><%= _("Follow us on twitter") %></a>
+    <% end %>
   </div>
 </div>
 
