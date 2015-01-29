@@ -127,4 +127,24 @@ describe User do
 
     end
 
+    describe :name do
+
+        it 'is valid with a first name and last name' do
+            user = User.new(:name => 'Test User')
+            expect(user).to have(0).errors_on(:name)
+        end
+
+        it 'is invalid with just a first name' do
+            user = User.new(:name => 'Test')
+            expect(user).to have(1).errors_on(:name)
+        end
+
+        it 'should give a descriptive error message if just a first name is entered' do
+            user = User.new(:name => 'Test')
+            expected_message = 'Please enter your full name - it is required by law when making a request'
+            user.errors_on(:name).should == [expected_message]
+        end
+
+    end
+
 end
