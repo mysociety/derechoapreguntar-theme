@@ -3,13 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
+# jbaezni <jbaezni@gmail.com>, 2015
+# louisecrow <louise@mysociety.org>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: version 0.0.1\n"
+"Project-Id-Version: alaveteli\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-09-24 09:15+0100\n"
-"PO-Revision-Date: 2014-09-19 12:44+0000\n"
-"Last-Translator: louisecrow <louise@mysociety.org>\n"
+"PO-Revision-Date: 2015-01-20 20:31+0000\n"
+"Last-Translator: jbaezni <jbaezni@gmail.com>\n"
 "Language-Team: Spanish (Nicaragua) (http://www.transifex.com/projects/p/derechoapreguntar-theme/language/es_NI/)\n"
 "Language: es_NI\n"
 "MIME-Version: 1.0\n"
@@ -42,46 +44,46 @@ msgid "Browse Requests"
 msgstr "Buscar solicitudes"
 
 msgid "Change General Law Information"
-msgstr ""
+msgstr "Cambiar Información general de Ley"
 
 msgid "Change Identity Card Number"
-msgstr ""
+msgstr "Cambie el numero de cédula de identida"
 
 msgid "Change profile photo"
-msgstr ""
+msgstr "Cambie foto de su Perfil"
 
 msgid "Change your General Law information"
-msgstr ""
+msgstr "Cambiar Información general de Ley"
 
 msgid "Change your General Law information on {{site_name}}"
-msgstr ""
+msgstr "Cambiar Información general de Ley {{site_name}}"
 
 msgid "Change your ID Number"
-msgstr ""
+msgstr "Cambio de su numero de Identidad"
 
 msgid "Change your Identity Card Number on {{site_name}}"
-msgstr ""
+msgstr "Cambio de su numero de Identidad {{site_name}}"
 
 msgid "Change your email"
-msgstr ""
+msgstr "Cambie su Email"
 
 msgid "Change your email address used on {{site_name}}"
-msgstr ""
+msgstr "Cambie su dirección de correo electrónico utilizada en {{site_name}}"
 
 msgid "Change your password"
-msgstr ""
+msgstr "Cambie su clave"
 
 msgid "Contact us"
 msgstr "Contáctanos"
 
 msgid "Credits"
-msgstr ""
+msgstr "Créditos "
 
 msgid "Date of Birth"
-msgstr ""
+msgstr "Mayor o Menor de Edad"
 
 msgid "Domicile"
-msgstr ""
+msgstr "Domicilio"
 
 msgid "Exercise your right to know."
 msgstr "Ejerce tu derecho a saber."
@@ -90,25 +92,25 @@ msgid "FOI officers"
 msgstr "Información para instituciones"
 
 msgid "General Law"
-msgstr ""
+msgstr "Generales de Ley"
 
 msgid "General Law Information"
-msgstr ""
+msgstr "Información General de Ley"
 
 msgid "Help"
-msgstr ""
+msgstr "Ayuda"
 
 msgid "How to Request"
 msgstr "Guía para solicitantes"
 
 msgid "Identity Card Number"
-msgstr ""
+msgstr "Cédula de Identidad"
 
 msgid "Identity Card Number:"
-msgstr ""
+msgstr "Cédula de Identidad:"
 
 msgid "Is {{email_address}} the wrong address for {{type_of_request}} requests to {{public_body_name}}? If so, please contact us using this form:"
-msgstr ""
+msgstr "¿Es {{email_address}} la dirección incorrecta para {{type_of_request}} estas solicitudes  {{public_body_name}}? Si es así, por favor póngase en contacto con nosotros mediante este formulario:"
 
 msgid "Make a Request"
 msgstr "Solicitar información"
@@ -117,64 +119,64 @@ msgid "Making requests"
 msgstr "Guía para solicitantes"
 
 msgid "Marital Status"
-msgstr ""
+msgstr "Estado Civil"
 
 msgid "Name"
-msgstr ""
+msgstr "Nombre"
 
 msgid "Occupation"
-msgstr ""
+msgstr "Profesión u Oficio"
 
 msgid "Original theme from {{link}}"
-msgstr ""
+msgstr "Tema Original de {{link}}"
 
 msgid "Password:"
-msgstr ""
+msgstr "Clave"
 
 msgid "Password: (again)"
-msgstr ""
+msgstr "Contraseña: (de nuevo)"
 
 msgid "Please accept the Terms and Conditions"
-msgstr ""
+msgstr "Por favor, acepte los Términos y Condiciones"
 
 msgid "Please confirm that you have read the <a href=\"{{terms_url}}\">Terms of Use</a> and <a href=\"{{privacy_url}}\">Privacy Policy</a>."
-msgstr ""
+msgstr "Por favor, confirma que has leído los <a href=\"{{terms_url}}\"> Términos de Uso </a> y <a href=\"{{privacy_url}}\"> Política de privacidad </a>."
 
 msgid "Please enter a valid date of birth"
-msgstr ""
+msgstr "Por favor, introduzca una fecha válida de nacimiento"
 
 msgid "Please enter your General Law information"
-msgstr ""
+msgstr "Introduzca su información de Ley General"
 
 msgid "Please enter your Identity Card Number"
-msgstr ""
+msgstr "Por favor, introduzca su número de cedula de identidad"
 
 msgid "Please enter your date of birth"
-msgstr ""
+msgstr "Por favor, introduzca su fecha de nacimiento"
 
 msgid "Please enter your domicile"
-msgstr ""
+msgstr "Introduzca su domicilio"
 
 msgid "Please enter your marital status"
-msgstr ""
+msgstr "Introduzca su estado civil"
 
 msgid "Please enter your occupation"
-msgstr ""
+msgstr "Introduzca su ocupación"
 
 msgid "Please use this email address for all replies to this request:"
-msgstr ""
+msgstr "Por favor, utilice esta dirección de correo electrónico para todas las respuestas a esta solicitud:"
 
 msgid "Privacy Policy"
 msgstr "Política de privacidad"
 
 msgid "REDACTED"
-msgstr ""
+msgstr "REDACTAR"
 
 msgid "Read blog"
-msgstr ""
+msgstr "Lea el blog"
 
 msgid "Requestor details"
-msgstr ""
+msgstr "detalles del Solicitante"
 
 msgid "Search"
 msgstr "Buscar"
@@ -183,7 +185,7 @@ msgid "Search over requests and authorities:"
 msgstr "Haz una búsqueda entre las peticiones ya realizadas:"
 
 msgid "Sign up"
-msgstr ""
+msgstr "Inscribirse"
 
 msgid "Terms of Use"
 msgstr "Condiciones de Uso"
@@ -192,25 +194,25 @@ msgid "Theme licensed under CC BY SA 3.0<br/>Creative Commons Attribution Share-
 msgstr "Contenido bajo licencia CC BY SA 3.0<br/>Creative Commons Attribution Share-Alike"
 
 msgid "Then you can change your email address used on {{site_name}}"
-msgstr ""
+msgstr "A continuación, puede cambiar su dirección de correo electrónico utilizada en {{}} site_name"
 
 msgid "Think of a question for a public authority."
 msgstr "Piensa una pregunta para un organismo público."
 
 msgid "To change your email address used on {{site_name}}"
-msgstr ""
+msgstr "Para cambiar su dirección de correo electrónico utilizada en {{site_name}}"
 
 msgid "To get information from public authorities:"
 msgstr "Para obtener información de instituciones públicas:"
 
 msgid "Updated automatically after_save"
-msgstr ""
+msgstr "Actualizado automáticamente después de guardar"
 
 msgid "We send the question for you"
 msgstr "Nosotros enviamos la pregunta por ti."
 
 msgid "We will not reveal your email address to anybody unless you or\\n        the law tell us to (<a href=\"{{url}}\">details</a>). "
-msgstr ""
+msgstr "No revelaremos su dirección de correo electrónico a nadie a menos que la ley no lo nos indique  (<a href=\"{{url}}\">details</a>)."
 
 msgid "We'll notify you when there is an answer."
 msgstr "Te avisamos cuando haya una respuesta."
@@ -230,25 +232,25 @@ msgstr ""
 "        <a href=\"{{help_url}}\">lee esto primero</a>."
 
 msgid "Your General Law information was successfully updated"
-msgstr ""
+msgstr "La información de Ley General se ha actualizado correctamente"
 
 msgid "Your Identification Card Number was successfully updated"
-msgstr ""
+msgstr "Su número de cedula de identidad se ha actualizado correctamente"
 
 msgid "Your e-mail:"
-msgstr ""
+msgstr "Su e-mail:"
 
 msgid "Your name:"
-msgstr ""
+msgstr "Su Nombre"
 
 msgid "Your privacy"
 msgstr "Tu privacidad"
 
 msgid "edit text about you"
-msgstr ""
+msgstr "editar texto sobre usted"
 
 msgid "type your search term here"
-msgstr ""
+msgstr "escriba el término de búsqueda aquí"
 
 msgid "unknown status "
-msgstr ""
+msgstr "estado desconocido"
