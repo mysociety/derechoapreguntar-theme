@@ -145,6 +145,11 @@ describe User do
             user.errors_on(:name).should == [expected_message]
         end
 
+        it 'should give a general message if field is blank' do
+            user = User.new
+            expected_message = 'Please enter your name'
+            user.errors_on(:name).should == [expected_message]
+        end
     end
 
 end

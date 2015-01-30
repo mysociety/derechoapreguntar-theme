@@ -38,7 +38,9 @@ Rails.configuration.to_prepare do
     validates :name,
               :format => {
                 :with => /\s/,
-                :message => _("Please enter your full name - it is required by law when making a request") }
+                :message => _("Please enter your full name - it is required by law when making a request"),
+                :allow_blank => true
+              }
 
 
     after_save :update_censor_rules
