@@ -4,13 +4,15 @@
 #
 # Translators:
 # jbaezni <jbaezni@gmail.com>, 2015
+# jbaezni <jbaezni@gmail.com>, 2015
+# louisecrow <louise@mysociety.org>, 2015
 # louisecrow <louise@mysociety.org>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: alaveteli\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-30 11:17+0000\n"
-"PO-Revision-Date: 2015-01-30 10:57+0000\n"
+"PO-Revision-Date: 2015-01-30 11:24+0000\n"
 "Last-Translator: louisecrow <louise@mysociety.org>\n"
 "Language-Team: Spanish (Nicaragua) (http://www.transifex.com/projects/p/derechoapreguntar-theme/language/es_NI/)\n"
 "Language: es_NI\n"
@@ -154,13 +156,11 @@ msgstr "Por favor, introduzca una fecha válida de nacimiento"
 msgid "Please enter your General Law information"
 msgstr "Introduzca su información de Ley General"
 
-#, fuzzy
 msgid "Please enter your Identity Card number"
 msgstr "Por favor, introduzca su número de cedula de identidad"
 
-#, fuzzy
 msgid "Please enter your Identity Card number in the correct format"
-msgstr "Por favor, introduzca su número de cedula de identidad"
+msgstr ""
 
 msgid "Please enter your date of birth"
 msgstr "Por favor, introduzca su fecha de nacimiento"
