@@ -226,7 +226,7 @@ msgstr ""
 msgid "Your e-mail:"
 msgstr ""
 
-msgid "Your name:"
+msgid "Your full name:"
 msgstr ""
 
 msgid "Your privacy"
