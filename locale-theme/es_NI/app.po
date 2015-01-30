@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alaveteli\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-24 09:15+0100\n"
-"PO-Revision-Date: 2015-01-20 20:31+0000\n"
-"Last-Translator: jbaezni <jbaezni@gmail.com>\n"
+"POT-Creation-Date: 2015-01-30 11:17+0000\n"
+"PO-Revision-Date: 2015-01-30 10:57+0000\n"
+"Last-Translator: louisecrow <louise@mysociety.org>\n"
 "Language-Team: Spanish (Nicaragua) (http://www.transifex.com/projects/p/derechoapreguntar-theme/language/es_NI/)\n"
 "Language: es_NI\n"
 "MIME-Version: 1.0\n"
@@ -91,6 +91,12 @@ msgstr "Ejerce tu derecho a saber."
 msgid "FOI officers"
 msgstr "Información para instituciones"
 
+msgid "Facebook page"
+msgstr ""
+
+msgid "Follow us on twitter"
+msgstr ""
+
 msgid "General Law"
 msgstr "Generales de Ley"
 
@@ -148,7 +154,12 @@ msgstr "Por favor, introduzca una fecha válida de nacimiento"
 msgid "Please enter your General Law information"
 msgstr "Introduzca su información de Ley General"
 
-msgid "Please enter your Identity Card Number"
+#, fuzzy
+msgid "Please enter your Identity Card number"
+msgstr "Por favor, introduzca su número de cedula de identidad"
+
+#, fuzzy
+msgid "Please enter your Identity Card number in the correct format"
 msgstr "Por favor, introduzca su número de cedula de identidad"
 
 msgid "Please enter your date of birth"
@@ -156,6 +167,9 @@ msgstr "Por favor, introduzca su fecha de nacimiento"
 
 msgid "Please enter your domicile"
 msgstr "Introduzca su domicilio"
+
+msgid "Please enter your full name - it is required by law when making a request"
+msgstr ""
 
 msgid "Please enter your marital status"
 msgstr "Introduzca su estado civil"
@@ -194,7 +208,7 @@ msgid "Theme licensed under CC BY SA 3.0<br/>Creative Commons Attribution Share-
 msgstr "Contenido bajo licencia CC BY SA 3.0<br/>Creative Commons Attribution Share-Alike"
 
 msgid "Then you can change your email address used on {{site_name}}"
-msgstr "A continuación, puede cambiar su dirección de correo electrónico utilizada en {{}} site_name"
+msgstr "A continuación, puede cambiar su dirección de correo electrónico utilizada en {{site_name}} "
 
 msgid "Think of a question for a public authority."
 msgstr "Piensa una pregunta para un organismo público."

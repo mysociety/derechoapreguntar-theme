@@ -70,6 +70,12 @@ msgstr ""
 msgid "FOI officers"
 msgstr ""
 
+msgid "Facebook page"
+msgstr ""
+
+msgid "Follow us on twitter"
+msgstr ""
+
 msgid "General Law"
 msgstr ""
 
@@ -127,13 +133,19 @@ msgstr ""
 msgid "Please enter your General Law information"
 msgstr ""
 
-msgid "Please enter your Identity Card Number"
+msgid "Please enter your Identity Card number"
+msgstr ""
+
+msgid "Please enter your Identity Card number in the correct format"
 msgstr ""
 
 msgid "Please enter your date of birth"
 msgstr ""
 
 msgid "Please enter your domicile"
+msgstr ""
+
+msgid "Please enter your full name - it is required by law when making a request"
 msgstr ""
 
 msgid "Please enter your marital status"

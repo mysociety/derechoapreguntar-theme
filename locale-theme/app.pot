@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: version 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-24 09:15+0100\n"
+"POT-Creation-Date: 2015-01-30 11:17+0000\n"
 "PO-Revision-Date: 2014-08-26 12:31+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -90,6 +90,12 @@ msgstr ""
 msgid "FOI officers"
 msgstr ""
 
+msgid "Facebook page"
+msgstr ""
+
+msgid "Follow us on twitter"
+msgstr ""
+
 msgid "General Law"
 msgstr ""
 
@@ -147,13 +153,19 @@ msgstr ""
 msgid "Please enter your General Law information"
 msgstr ""
 
-msgid "Please enter your Identity Card Number"
+msgid "Please enter your Identity Card number"
+msgstr ""
+
+msgid "Please enter your Identity Card number in the correct format"
 msgstr ""
 
 msgid "Please enter your date of birth"
 msgstr ""
 
 msgid "Please enter your domicile"
+msgstr ""
+
+msgid "Please enter your full name - it is required by law when making a request"
 msgstr ""
 
 msgid "Please enter your marital status"
