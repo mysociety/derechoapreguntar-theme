@@ -14,8 +14,14 @@ module InfoRequestCustomStates
     #   waiting_response_overdue
     #   waiting_response_very_overdue
     def theme_calculate_status
-        # just fall back to the core calculation
-        return self.base_calculate_status
+        return 'waiting_classification' if awaiting_description
+        return described_state unless waiting_response?
+        return 'waiting_response_very_overdue' if
+            Time.now.strftime("%Y-%m-%d") > date_very_overdue_after.strftime("%Y-%m-%d")
+        return 'waiting_response_overdue' if
+            Time.now.strftime("%Y-%m-%d") > date_response_required_by.strftime("%Y-%m-%d")
+        return 'deadline_extended' if has_extended_deadline?
+        return 'waiting_response'
     end
 
     # Mixin methods for InfoRequest
