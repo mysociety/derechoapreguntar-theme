@@ -576,3 +576,13 @@ dt {
       padding: 0 0 0 2em;
     }
 }
+
+/* Icons for custom statuses */
+.icon_deadline_extended {
+  background-image:image-url('status/waiting.png');
+  color: $status-pending;
+  background-size: 22px 22px;
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    background-image:image-url('status/waiting@2x.png');
+  }
+}
