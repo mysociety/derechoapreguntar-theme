@@ -20,4 +20,10 @@ You can then switch the theme the application is using:
 
     bundle exec rake themes:install
 
+## To run the theme tests:
+
+In the Alaveteli directory with the theme installed:
+
+   bundle exec rspec lib/themes/derechoapreguntar-theme/spec
+
 Copyright (c) 2011 mySociety, released under the MIT license
