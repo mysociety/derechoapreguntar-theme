@@ -5,7 +5,7 @@
 
     <p>
         <%= f.label :email, _('Your e-mail:'), :class => 'form_label' %>
-        <%= f.text_field :email, { :size => 20, :tabindex => 60 } %>
+        <%= f.text_field :email, { :size => 20, :tabindex => 10 } %>
     </p>
     <div class="form_item_note">
         <%= _('We will not reveal your email address to anybody unless you or
@@ -14,7 +14,7 @@
 
     <p>
         <%= f.label :name, _('Your full name:'), :class => 'form_label' %>
-        <%= f.text_field :name, { :size => 20, :tabindex => 70, :autocomplete => "off" } %>
+        <%= f.text_field :name, { :size => 20, :tabindex => 20, :autocomplete => "off" } %>
     </p>
     <div class="form_item_note">
          <%= _('Your <strong>name will appear publicly</strong>
@@ -26,12 +26,12 @@
 
     <p>
         <%= f.label :password, _('Password:'), :class => 'form_label' %>
-        <%= f.password_field :password, { :size => 15, :tabindex => 80, :autocomplete => "off" } %>
+        <%= f.password_field :password, { :size => 15, :tabindex => 30, :autocomplete => "off" } %>
     </p>
 
     <p>
         <%= f.label :password_confirmation, _('Password: (again)'), :class => 'form_label' %>
-        <%= f.password_field :password_confirmation, { :size => 15, :tabindex => 90, :autocomplete => "off" } %>
+        <%= f.password_field :password_confirmation, { :size => 15, :tabindex => 40, :autocomplete => "off" } %>
     </p>
 
     <%= f.fields_for :general_law do |general_law_form| %>
@@ -43,7 +43,7 @@
             makes more sense to be in the GeneralLaw fieldset.
           %>
           <%= f.label :identity_card_number, _('Identity Card Number') %>
-          <%= f.text_field :identity_card_number, { :size => 15, :tabindex => 100, :placeholder => '999-999999-9999A' } %>
+          <%= f.text_field :identity_card_number, { :size => 15, :tabindex => 50, :placeholder => '999-999999-9999A' } %>
 
           <%= render :partial => 'general_law_fields', :locals => { :f => general_law_form } %>
 
@@ -55,7 +55,7 @@
     <% end %>
 
     <p class="form_checkbox">
-        <%= f.check_box :terms, :tabindex => 110 %>
+        <%= f.check_box :terms, :tabindex => 100 %>
         <%= f.label :terms, _('Please confirm that you have read the <a href="{{terms_url}}">Terms of Use</a> and <a href="{{privacy_url}}">Privacy Policy</a>.',
                   :terms_url => help_general_path(:action => 'terms_of_use'),
                   :privacy_url => help_general_path(:action => 'privacy_policy')) %>
@@ -69,7 +69,7 @@
     <div class="form_button">
       <%= hidden_field_tag 'token', params[:token], { :id => 'signup_token' } %>
       <%= hidden_field_tag :modal, params[:modal], { :id => 'signup_modal' } %>
-      <%= f.submit _('Sign up'), :tabindex => 120 %>
+      <%= f.submit _('Sign up'), :tabindex => 110 %>
     </div>
 
 <% end %>
