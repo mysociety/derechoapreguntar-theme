@@ -9,11 +9,11 @@
 # louisecrow <louise@mysociety.org>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: version 0.0.1\n"
+"Project-Id-Version: alaveteli\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-30 12:25+0000\n"
-"PO-Revision-Date: 2015-01-30 11:42+0000\n"
-"Last-Translator: louisecrow <louise@mysociety.org>\n"
+"POT-Creation-Date: 2015-02-24 17:26+0000\n"
+"PO-Revision-Date: 2015-03-13 18:31+0000\n"
+"Last-Translator: jbaezni <jbaezni@gmail.com>\n"
 "Language-Team: Spanish (Nicaragua) (http://www.transifex.com/projects/p/derechoapreguntar-theme/language/es_NI/)\n"
 "Language: es_NI\n"
 "MIME-Version: 1.0\n"
@@ -21,11 +21,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "<p>Thank you! Hopefully your wait isn't too long.</p> <p>By law, you should get a response promptly, and normally before the end of <strong>\\n            {{date_response_required_by}}</strong>.</p>"
+msgstr "<p> Gracias! Esperemos que su espera no es demasiado largo. </ P> <p> Por ley, usted debe obtener una respuesta con prontitud, y normalmente antes del final de <strong> \\ n {{date_response_required_by}} </ strong>. </ P >"
+
 msgid "A project by"
 msgstr "Un proyecto de"
 
 msgid "API"
-msgstr ""
+msgstr "API, interfaz de programación de aplicaciones"
 
 msgid "About"
 msgstr "Quienes somos"
@@ -84,6 +87,9 @@ msgstr "Créditos "
 msgid "Date of Birth"
 msgstr "Mayor o Menor de Edad"
 
+msgid "Deadline extended."
+msgstr "Se extiende el plazo."
+
 msgid "Domicile"
 msgstr "Domicilio"
 
@@ -94,10 +100,10 @@ msgid "FOI officers"
 msgstr "Información para instituciones"
 
 msgid "Facebook page"
-msgstr ""
+msgstr "La página de Facebook"
 
 msgid "Follow us on twitter"
-msgstr ""
+msgstr "Síguenos en twitter"
 
 msgid "General Law"
 msgstr "Generales de Ley"
@@ -160,7 +166,7 @@ msgid "Please enter your Identity Card number"
 msgstr "Por favor, introduzca su número de cedula de identidad"
 
 msgid "Please enter your Identity Card number in the correct format"
-msgstr ""
+msgstr "Por favor, introduzca su número de cedula en el formato correcto"
 
 msgid "Please enter your date of birth"
 msgstr "Por favor, introduzca su fecha de nacimiento"
@@ -169,7 +175,7 @@ msgid "Please enter your domicile"
 msgstr "Introduzca su domicilio"
 
 msgid "Please enter your full name - it is required by law when making a request"
-msgstr ""
+msgstr "Por favor escriba su nombre completo - esto es requerido por ley al hacer una solicitud"
 
 msgid "Please enter your marital status"
 msgstr "Introduzca su estado civil"
@@ -204,6 +210,9 @@ msgstr "Inscribirse"
 msgid "Terms of Use"
 msgstr "Condiciones de Uso"
 
+msgid "The authority has asked for an <strong>extension</strong> of the deadline for this request"
+msgstr "La autoridad ha solicitado una <strong> extensión </ strong> de la fecha límite para esta solicitud"
+
 msgid "Theme licensed under CC BY SA 3.0<br/>Creative Commons Attribution Share-Alike"
 msgstr "Contenido bajo licencia CC BY SA 3.0<br/>Creative Commons Attribution Share-Alike"
 
@@ -232,7 +241,7 @@ msgid "We'll notify you when there is an answer."
 msgstr "Te avisamos cuando haya una respuesta."
 
 msgid "Why are we asking for this?"
-msgstr ""
+msgstr "¿Por qué estamos pidiendo esto?"
 
 msgid "Will they answer?"
 msgstr "¿Contestarán?"
@@ -258,7 +267,7 @@ msgid "Your e-mail:"
 msgstr "Su e-mail:"
 
 msgid "Your full name:"
-msgstr ""
+msgstr "Su nombre completo:"
 
 msgid "Your privacy"
 msgstr "Tu privacidad"
@@ -271,3 +280,6 @@ msgstr "escriba el término de búsqueda aquí"
 
 msgid "unknown status "
 msgstr "estado desconocido"
+
+msgid "{{public_body_name}} has asked for an extension of the deadline for this request. They should respond promptly and no later than {{response_date}}."
+msgstr "{{public_body_name}} ha pedido una ampliación del plazo para esta solicitud. Deben responder con prontitud o a mas tardar {{response_date}}."
