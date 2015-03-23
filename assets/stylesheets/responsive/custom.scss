@@ -242,7 +242,7 @@ a.link_button_green_large {
   border-bottom: none;
   a {
     @extend %menu-item;
-    padding: 0.5em 0.4em;
+    padding: 0.5em 0.75em;
   }
   /* Show which section is currently selected */
   li.selected a{
