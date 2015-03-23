@@ -11,9 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alaveteli\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-24 17:26+0000\n"
-"PO-Revision-Date: 2015-03-13 18:31+0000\n"
-"Last-Translator: jbaezni <jbaezni@gmail.com>\n"
+"POT-Creation-Date: 2015-03-23 12:03+0000\n"
+"PO-Revision-Date: 2015-03-23 12:10+0000\n"
+"Last-Translator: Gareth Rees <gareth@mysociety.org>\n"
 "Language-Team: Spanish (Nicaragua) (http://www.transifex.com/projects/p/derechoapreguntar-theme/language/es_NI/)\n"
 "Language: es_NI\n"
 "MIME-Version: 1.0\n"
@@ -23,6 +23,9 @@ msgstr ""
 
 msgid "<p>Thank you! Hopefully your wait isn't too long.</p> <p>By law, you should get a response promptly, and normally before the end of <strong>\\n            {{date_response_required_by}}</strong>.</p>"
 msgstr "<p> Gracias! Esperemos que su espera no es demasiado largo. </ P> <p> Por ley, usted debe obtener una respuesta con prontitud, y normalmente antes del final de <strong> \\ n {{date_response_required_by}} </ strong>. </ P >"
+
+msgid "<strong>Anything else</strong>, such as clarifying, prompting, thanking"
+msgstr ""
 
 msgid "A project by"
 msgstr "Un proyecto de"
@@ -93,6 +96,12 @@ msgstr "Se extiende el plazo."
 msgid "Domicile"
 msgstr "Domicilio"
 
+msgid "Don't want to address your message to {{person_or_body}}?  You can also write to:"
+msgstr ""
+
+msgid "Edit and add <strong>more details</strong> to the message above,\\n                explaining why you are dissatisfied with their response."
+msgstr ""
+
 msgid "Exercise your right to know."
 msgstr "Ejerce tu derecho a saber."
 
@@ -102,8 +111,17 @@ msgstr "Información para instituciones"
 msgid "Facebook page"
 msgstr "La página de Facebook"
 
+#. "Follow ups" in this context means further
+#. messages sent by the requester to the authority after
+#. the initial request
+msgid "Follow ups and new responses to this request have been stopped to prevent spam. Please <a href=\"{{url}}\">contact us</a> if you are {{user_link}} and need to send a follow up."
+msgstr ""
+
 msgid "Follow us on twitter"
 msgstr "Síguenos en twitter"
+
+msgid "Forgotten your password?"
+msgstr ""
 
 msgid "General Law"
 msgstr "Generales de Ley"
@@ -114,14 +132,29 @@ msgstr "Información General de Ley"
 msgid "Help"
 msgstr "Ayuda"
 
+msgid "Home"
+msgstr ""
+
 msgid "How to Request"
 msgstr "Guía para solicitantes"
+
+msgid "I am asking for <strong>new information</strong>"
+msgstr ""
+
+msgid "I am requesting an <strong>internal review</strong>"
+msgstr ""
 
 msgid "Identity Card Number"
 msgstr "Cédula de Identidad"
 
 msgid "Identity Card Number:"
 msgstr "Cédula de Identidad:"
+
+msgid "If you are dissatisfied by the response you got from\\n            the public authority, you have the right to\\n            complain (<a href=\"{{url}}\">details</a>)."
+msgstr ""
+
+msgid "If you've used {{site_name}} before"
+msgstr ""
 
 msgid "Is {{email_address}} the wrong address for {{type_of_request}} requests to {{public_body_name}}? If so, please contact us using this form:"
 msgstr "¿Es {{email_address}} la dirección incorrecta para {{type_of_request}} estas solicitudes  {{public_body_name}}? Si es así, por favor póngase en contacto con nosotros mediante este formulario:"
@@ -149,6 +182,9 @@ msgstr "Clave"
 
 msgid "Password: (again)"
 msgstr "Contraseña: (de nuevo)"
+
+msgid "Please <strong>only</strong> write messages directly relating to your request {{request_link}}. If you would like to ask for information that was not in your original request, then <a href=\"{{new_request_link}}\">file a new request</a>."
+msgstr ""
 
 msgid "Please accept the Terms and Conditions"
 msgstr "Por favor, acepte los Términos y Condiciones"
@@ -186,6 +222,9 @@ msgstr "Introduzca su ocupación"
 msgid "Please use this email address for all replies to this request:"
 msgstr "Por favor, utilice esta dirección de correo electrónico para todas las respuestas a esta solicitud:"
 
+msgid "Preview your message"
+msgstr ""
+
 msgid "Privacy Policy"
 msgstr "Política de privacidad"
 
@@ -194,6 +233,12 @@ msgstr "REDACTAR"
 
 msgid "Read blog"
 msgstr "Lea el blog"
+
+msgid "Remember me (keeps you signed in longer; do not use on a public computer)"
+msgstr ""
+
+msgid "Request an internal review from {{person_or_body}}"
+msgstr ""
 
 msgid "Requestor details"
 msgstr "detalles del Solicitante"
@@ -204,6 +249,15 @@ msgstr "Buscar"
 msgid "Search over requests and authorities:"
 msgstr "Haz una búsqueda entre las peticiones ya realizadas:"
 
+msgid "Send a public follow up message to {{person_or_body}}"
+msgstr ""
+
+msgid "Send a public reply to {{person_or_body}}"
+msgstr ""
+
+msgid "Sign in"
+msgstr ""
+
 msgid "Sign up"
 msgstr "Inscribirse"
 
@@ -212,6 +266,12 @@ msgstr "Condiciones de Uso"
 
 msgid "The authority has asked for an <strong>extension</strong> of the deadline for this request"
 msgstr "La autoridad ha solicitado una <strong> extensión </ strong> de la fecha límite para esta solicitud"
+
+msgid "The response to your request has been <strong>delayed</strong>.  You can say that,\\n            by law, the authority should normally have responded\\n            <strong>promptly</strong> and"
+msgstr ""
+
+msgid "The response to your request is <strong>long overdue</strong>.   You can say that, by\\n            law, under all circumstances, the authority should have responded\\n            by now"
+msgstr ""
 
 msgid "Theme licensed under CC BY SA 3.0<br/>Creative Commons Attribution Share-Alike"
 msgstr "Contenido bajo licencia CC BY SA 3.0<br/>Creative Commons Attribution Share-Alike"
@@ -239,6 +299,9 @@ msgstr "No revelaremos su dirección de correo electrónico a nadie a menos que 
 
 msgid "We'll notify you when there is an answer."
 msgstr "Te avisamos cuando haya una respuesta."
+
+msgid "What are you doing?"
+msgstr ""
 
 msgid "Why are we asking for this?"
 msgstr "¿Por qué estamos pidiendo esto?"
@@ -272,14 +335,37 @@ msgstr "Su nombre completo:"
 msgid "Your privacy"
 msgstr "Tu privacidad"
 
+msgid "by <strong>{{date}}</strong>"
+msgstr ""
+
+msgid "details"
+msgstr ""
+
 msgid "edit text about you"
 msgstr "editar texto sobre usted"
+
+msgid "in term time"
+msgstr ""
+
+msgid "the main FOI contact address for {{public_body}}"
+msgstr ""
+
+#. This phrase completes the following sentences:
+#. Request an internal review from...
+#. Send a public follow up message to...
+#. Send a public reply to...
+#. Don't want to address your message to... ?
+msgid "the main FOI contact at {{public_body}}"
+msgstr ""
 
 msgid "type your search term here"
 msgstr "escriba el término de búsqueda aquí"
 
 msgid "unknown status "
 msgstr "estado desconocido"
+
+msgid "what's that?"
+msgstr ""
 
 msgid "{{public_body_name}} has asked for an extension of the deadline for this request. They should respond promptly and no later than {{response_date}}."
 msgstr "{{public_body_name}} ha pedido una ampliación del plazo para esta solicitud. Deben responder con prontitud o a mas tardar {{response_date}}."
