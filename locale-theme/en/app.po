@@ -25,6 +25,9 @@ msgstr ""
 msgid "Ask"
 msgstr ""
 
+msgid "Blog"
+msgstr ""
+
 msgid "Browse Requests"
 msgstr ""
 
@@ -206,9 +209,6 @@ msgid "Privacy Policy"
 msgstr ""
 
 msgid "REDACTED"
-msgstr ""
-
-msgid "Read blog"
 msgstr ""
 
 msgid "Remember me (keeps you signed in longer; do not use on a public computer)"
