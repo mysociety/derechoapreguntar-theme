@@ -6,11 +6,11 @@
   <h1><%=@title %></h1>
 
     <h2>Introducción</h2>
-      <p>El proyecto tuderechoasaber.es funciona de acuerdo con los principios de los datos abiertos, disponibles para los programadores que quieran utilizarlos en otros sitios web y software.</p>
-      <p>tuderechoasaber.es todavía no tiene un API completo pero vamos gradualmente añadiendo una gran cantidad de cosas que semejan en el uso a un API, según requieren los programadores.</p>
+      <p>El proyecto derechoapreguntar.org funciona de acuerdo con los principios de los datos abiertos, disponibles para los programadores que quieran utilizarlos en otros sitios web y software.</p>
+      <p>derechoapreguntar.org todavía no tiene un API completo pero vamos gradualmente añadiendo una gran cantidad de cosas que semejan en el uso a un API, según requieren los programadores.</p>
 
     <h2>Enlaces a nuevas solicitudes</h2>
-      <p>Para animar tus usuarios a entrar en contacto con una autoridad pública específica utiliza URLs de la forma:</p>
+      <p>Para animar tus usuarios a entrar en contacto con una entidad pública específica utiliza URLs de la forma:</p>
       <blockquote>
       <%= link_to new_request_to_body_url(:url_name => "ministerio_de_trabajo") , new_request_to_body_url(:url_name => "ministerio_de_trabajo") %>
       </blockquote>
@@ -44,8 +44,8 @@
 
       <p>Solicitudes, usuarios y autoridades, todos tienen una versión JSON con informaciones básicas sobre ellos. Cada formato Atom tiene un equivalente JSON con informaciones sobre los objetos incluidos en el feed.</p>
 
-    <h2>Información sobre todos los organismos públicos de España</h2>
-      <p>Un fichero CSV con información sobre todos los organismos de España está disponible en el sitio web de tuderechoasaber.es: <%= link_to "all-authorities.csv", all_public_bodies_csv_url() %>
+    <h2>Información sobre todos las entidades públicas de Nicaragua</h2>
+      <p>Un fichero CSV con información sobre todos las entidades públicas de Nicaragua está disponible en el sitio web de derechoapreguntar.org: <%= link_to "all-authorities.csv", all_public_bodies_csv_url() %>
       </p>
 
   <p>Por favor <a href="/help/contact">contáctanos</a> si necesitas funcionalidad en el API que todavía no esté aquí. Es un trabajo en proceso, y añadimos cosas cuando la gente nos lo pide.</p>
