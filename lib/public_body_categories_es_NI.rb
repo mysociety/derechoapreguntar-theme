@@ -1,5 +1,5 @@
 PublicBodyCategories.add(:es_NI, [
-    "Organismos públicos",
+    "Entidades públicas",
         [ "poderes_del_estado", "Poderes del Estado", "Un Poder del Estado" ],
         [ "ministerios_de_estado", "Ministerios de Estado", "Un Ministerio de Estado"],
         [ "entes_descentralizados_del_poder_ejecutivo", "Entes descentralizados", "Un Ente descentralizados"],
