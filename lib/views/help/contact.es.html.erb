@@ -7,9 +7,9 @@
 <div id="contact_preamble">
 
     <% if !flash[:notice] %>
-        <h2>Póngase en contacto con una autoridad para obtener información oficial</h2>
+        <h2>Póngase en contacto con una entidad para obtener información oficial</h2>
         <ul>
-            <li><a href="<%= new_request_path %>">Vaya aqui</a> para hacer una solicitud, en público, para obtener información de las entidades públicas.</li>
+            <li><a href="<%= new_request_path %>">Aquí</a> para hacer una solicitud, en público, para obtener información de las entidades públicas.</li>
 
             <li>
             Pedir información privada acerca de usted mismo?
@@ -20,7 +20,7 @@
 
     <% end %>
 
-    <h2>Póngase en contacto con el <%= site_name %> equipo</h2>
+    <h2>Póngase en contacto con el equipo de <%= site_name %></h2>
     <% if !flash[:notice] %>
             <ul>
             <li>
@@ -31,7 +31,7 @@
                href="mailto:<%=@contact_email%>"><%=@contact_email%></a>
             </li>
 
-            <li>Somos una <strong>organizacion</strong> no Gubernamental.</li>
+            <li>Somos una <strong>organización</strong> no Gubernamental.</li>
             </ul>
     <% end %>
 </div>
@@ -57,7 +57,7 @@
     </p>
 
     <p>
-        <label class="form_label" for="contact_message">Mensaje a la autoridad:</label>
+        <label class="form_label" for="contact_message">Mensaje al equipo de Derecho a Preguntar:</label>
         <%= f.text_area :message, :rows => 10, :cols => 60 %>
     </p>
 
