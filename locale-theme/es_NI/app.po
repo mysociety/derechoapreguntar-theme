@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: alaveteli\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-23 12:14+0000\n"
-"PO-Revision-Date: 2015-04-09 16:11+0000\n"
+"PO-Revision-Date: 2015-04-15 11:48+0000\n"
 "Last-Translator: Gareth Rees <gareth@mysociety.org>\n"
 "Language-Team: Spanish (Nicaragua) (http://www.transifex.com/projects/p/derechoapreguntar-theme/language/es_NI/)\n"
 "Language: es_NI\n"
@@ -26,7 +26,7 @@ msgid "<p>Thank you! Hopefully your wait isn't too long.</p> <p>By law, you shou
 msgstr "<p>Gracias! Esperemos que su espera no es demasiado largo.</p> <p>Por ley, usted debe obtener una respuesta con prontitud, y normalmente antes del final de <strong>\\n {{date_response_required_by}}</strong>.</p>"
 
 msgid "<strong>Anything else</strong>, such as clarifying, prompting, thanking"
-msgstr "<strong> Todo lo demás </ strong>, como aclaración, lo que provocó, agradeciendo"
+msgstr "<strong> Todo lo demás, </strong>, como aclaración y agradecimientos."
 
 msgid "A project by"
 msgstr "Un proyecto de"
@@ -101,7 +101,7 @@ msgid "Domicile"
 msgstr "Domicilio"
 
 msgid "Don't want to address your message to {{person_or_body}}?  You can also write to:"
-msgstr "No quiero dirigir su mensaje a {{person_or_body}}? También puede escribir a"
+msgstr "¿Quiere dirigir su mensaje al contacto de {{person_or_body}}? También puede escribir a:"
 
 msgid "Edit and add <strong>more details</strong> to the message above,\\n                explaining why you are dissatisfied with their response."
 msgstr "Editar y añadir <strong> más detalles </strong> al mensaje anterior, \\n que explique por qué no está satisfecho con su respuesta."
@@ -146,7 +146,7 @@ msgid "I am asking for <strong>new information</strong>"
 msgstr "Estoy pidiendo <strong> nueva información </strong>"
 
 msgid "I am requesting an <strong>internal review</strong>"
-msgstr "Estoy solicitando una <strong> revisión de la información </strong>"
+msgstr "Estoy preguntando por <strong> mi solicitud de información</strong>"
 
 msgid "Identity Card Number"
 msgstr "Cédula de Identidad"
@@ -155,7 +155,7 @@ msgid "Identity Card Number:"
 msgstr "Cédula de Identidad:"
 
 msgid "If you are dissatisfied by the response you got from\\n            the public authority, you have the right to\\n            complain (<a href=\"{{url}}\">details</a>)."
-msgstr "Si no está satisfecho por la respuesta que obtuvo de \\ n la entidad pública, usted tiene el derecho a\\n quejarse (<a href=\"{{url}}\">details</a>)."
+msgstr "Si no está satisfecho por la respuesta que obtuvo de la entidad pública, usted tiene el derecho a utilizar recursos que la Ley 621 establece(<a href=\"{{url}}\">detalles</a>)."
 
 msgid "If you've used {{site_name}} before"
 msgstr "Si ha utilizado {{site_name}} antes"
@@ -251,7 +251,7 @@ msgid "Search over requests and authorities:"
 msgstr "Haz una búsqueda entre las peticiones ya realizadas:"
 
 msgid "Send a public follow up message to {{person_or_body}}"
-msgstr "Enviar un mensaje de seguimiento público a {{person_or_body}}"
+msgstr "Enviar un mensaje al contacto  de {{person_or_body}}"
 
 msgid "Send a public reply to {{person_or_body}}"
 msgstr "Enviar una respuesta pública a {{person_or_body}}"
@@ -349,7 +349,7 @@ msgid "in term time"
 msgstr "en tiempo de término"
 
 msgid "the main FOI contact address for {{public_body}}"
-msgstr "la dirección principal de contacto de FOI para {{public_body}}"
+msgstr "la OAIP en {{public_body}}"
 
 #. This phrase completes the following sentences:
 #. Request an internal review from...
@@ -357,7 +357,7 @@ msgstr "la dirección principal de contacto de FOI para {{public_body}}"
 #. Send a public reply to...
 #. Don't want to address your message to... ?
 msgid "the main FOI contact at {{public_body}}"
-msgstr "el contacto principal de FOI  en {{public_body}}"
+msgstr "al contacto de la OAIP de {{public_body}}"
 
 msgid "type your search term here"
 msgstr "escriba el término de búsqueda aquí"
