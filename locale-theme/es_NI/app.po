@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: alaveteli\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-23 12:14+0000\n"
-"PO-Revision-Date: 2015-04-15 14:49+0000\n"
+"PO-Revision-Date: 2015-04-16 14:56+0000\n"
 "Last-Translator: jbaezni <jbaezni@gmail.com>\n"
 "Language-Team: Spanish (Nicaragua) (http://www.transifex.com/projects/p/derechoapreguntar-theme/language/es_NI/)\n"
 "Language: es_NI\n"
@@ -349,7 +349,7 @@ msgid "in term time"
 msgstr "en tiempo de término"
 
 msgid "the main FOI contact address for {{public_body}}"
-msgstr "de la OAIP en la {{public_body}}"
+msgstr "de la OAIP {{public_body}}"
 
 #. This phrase completes the following sentences:
 #. Request an internal review from...
@@ -357,7 +357,7 @@ msgstr "de la OAIP en la {{public_body}}"
 #. Send a public reply to...
 #. Don't want to address your message to... ?
 msgid "the main FOI contact at {{public_body}}"
-msgstr "la OAIP {{public_body}}"
+msgstr "en la OAIP {{public_body}}"
 
 msgid "type your search term here"
 msgstr "escriba el término de búsqueda aquí"
