@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: alaveteli\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-23 12:14+0000\n"
-"PO-Revision-Date: 2015-04-16 14:56+0000\n"
+"PO-Revision-Date: 2015-04-17 01:58+0000\n"
 "Last-Translator: jbaezni <jbaezni@gmail.com>\n"
 "Language-Team: Spanish (Nicaragua) (http://www.transifex.com/projects/p/derechoapreguntar-theme/language/es_NI/)\n"
 "Language: es_NI\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "<p>Thank you! Hopefully your wait isn't too long.</p> <p>By law, you should get a response promptly, and normally before the end of <strong>\\n            {{date_response_required_by}}</strong>.</p>"
-msgstr "<p>Gracias! Esperemos que su espera no es demasiado largo.</p> <p>Por ley, usted debe obtener una respuesta con prontitud, y normalmente antes del final de <strong>\\n {{date_response_required_by}}</strong>.</p>"
+msgstr "<p>Gracias! </p> <p>Por ley, usted debe obtener una respuesta con prontitud, y normalmente antes del final de <strong>\\n {{date_response_required_by}}</strong>.</p>"
 
 msgid "<strong>Anything else</strong>, such as clarifying, prompting, thanking"
 msgstr "<strong> Todo lo demás, </strong>, como aclaración y agradecimientos."
@@ -110,7 +110,7 @@ msgid "Exercise your right to know."
 msgstr "Ejerce tu derecho a saber."
 
 msgid "FOI officers"
-msgstr "Información para entidades"
+msgstr "Responsables de la OAIP"
 
 msgid "Facebook page"
 msgstr "La página de Facebook"
@@ -155,7 +155,7 @@ msgid "Identity Card Number:"
 msgstr "Cédula de Identidad:"
 
 msgid "If you are dissatisfied by the response you got from\\n            the public authority, you have the right to\\n            complain (<a href=\"{{url}}\">details</a>)."
-msgstr "Si no está satisfecho por la respuesta que obtuvo de la entidad pública, usted tiene el derecho a utilizar recursos que la Ley 621 establece(<a href=\"{{url}}\">detalles</a>)."
+msgstr "Si no está satisfecho con la respuesta que obtuvo de la entidad pública, usted puede hacer uso de los recursos que establece la Ley 621 (<a href=\"{{url}}\">detalles</a>)."
 
 msgid "If you've used {{site_name}} before"
 msgstr "Si ha utilizado {{site_name}} antes"
@@ -239,7 +239,7 @@ msgid "Remember me (keeps you signed in longer; do not use on a public computer)
 msgstr "Recuérdeme (mantenga accedido siempre, no utilizar en una computadora pública)"
 
 msgid "Request an internal review from {{person_or_body}}"
-msgstr "Solicitar una revisión de la información {{person_or_body}}"
+msgstr "Estoy preguntando por mi solicitud de información a {{person_or_body}}"
 
 msgid "Requestor details"
 msgstr "detalles del Solicitante"
@@ -296,7 +296,7 @@ msgid "We send the question for you"
 msgstr "Nosotros enviamos la pregunta por ti."
 
 msgid "We will not reveal your email address to anybody unless you or\\n        the law tell us to (<a href=\"{{url}}\">details</a>). "
-msgstr "No revelaremos su dirección de correo electrónico a nadie a menos que la ley no lo nos indique  (<a href=\"{{url}}\">details</a>)."
+msgstr "No revelaremos su dirección de correo electrónico a nadie a menos que la ley no lo nos indique  (<a href=\"{{url}}\">detalles</a>)."
 
 msgid "We'll notify you when there is an answer."
 msgstr "Te avisamos cuando haya una respuesta."
@@ -349,7 +349,7 @@ msgid "in term time"
 msgstr "en tiempo de término"
 
 msgid "the main FOI contact address for {{public_body}}"
-msgstr "de la OAIP {{public_body}}"
+msgstr "Al contacto de la OAIP {{public_body}}"
 
 #. This phrase completes the following sentences:
 #. Request an internal review from...
