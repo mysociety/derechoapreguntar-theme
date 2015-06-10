@@ -54,7 +54,15 @@ Rails.configuration.to_prepare do
                 :name => 'Internal admin user',
                 :email => AlaveteliConfiguration.contact_email,
                 :password => password,
-                :password_confirmation => password
+                :password_confirmation => password,
+                :identity_card_number => '000-000000-0001A',
+                :terms => '1',
+                :general_law_attributes => {
+                  :date_of_birth => Date.yesterday,
+                  :marital_status => 'unknown',
+                  :occupation => 'unknown',
+                  :domicile => 'unknown'
+                }
             )
             user.save!
         end
