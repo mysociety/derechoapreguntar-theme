@@ -45,6 +45,23 @@ Rails.configuration.to_prepare do
 
     after_save :update_censor_rules
 
+    # The "internal admin" is a special user for internal use.
+    def self.internal_admin_user
+        user = User.find_by_email(AlaveteliConfiguration::contact_email)
+        if user.nil?
+            password = PostRedirect.generate_random_token
+            user = User.new(
+                :name => 'Internal admin user',
+                :email => AlaveteliConfiguration.contact_email,
+                :password => password,
+                :password_confirmation => password
+            )
+            user.save!
+        end
+
+        user
+    end
+
     private
 
     def update_censor_rules
