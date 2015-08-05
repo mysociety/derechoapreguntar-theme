@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 PublicBodyCategories.add(:es_NI, [
     "Entidades públicas",
         [ "poderes_del_estado", "Poderes del Estado", "Un Poder del Estado" ],

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 FactoryGirl.modify do
 
   factory :user do

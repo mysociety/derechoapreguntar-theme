@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class DerechoaPreguntarThemeCreateGeneralLaws < ActiveRecord::Migration
   def self.up
     create_table :general_laws do |t|
