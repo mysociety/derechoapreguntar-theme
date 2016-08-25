@@ -10,10 +10,10 @@
 /* General styling of nav menu items */
 %menu-item {
   text-decoration: none;
-  color: $white;
+  color: $color_white;
   background-color: $main_menu-link_text;
   @include respond-min( $main_menu-mobile_menu_cutoff ){
-    background-color: $white;
+    background-color: $color_white;
     color: transparentize($main_menu-link_text, 0.2);
     @include ie8 {
       color: $main_menu-link_text;
@@ -36,9 +36,9 @@
       background-color: $main_menu-active_link_bg;
   }
   @include respond-min( $main_menu-mobile_menu_cutoff ){
-    background-color: $white;
+    background-color: $color_white;
     &:hover{
-        background-color: $white;
+        background-color: $color_white;
     }
 
   }
@@ -92,7 +92,7 @@ form input[type="number"] {
     border-radius: 0;
     transition: all 0.3s ease-out;
      &:focus{
-          background-color: $lightest-blue;
+          background-color: $color_ni_lightest_blue;
       }
     /* Set a fixed height for text inputs in older IE 8 */
     @include ie8{
@@ -106,7 +106,7 @@ form input[type="number"] {
 
 input.use-datepicker[type=text] {
   width: 130px;
-  background:image-url('calendar.png') no-repeat 100px 5px #fff;
+  background:image-url('calendar.png') no-repeat 100px 5px $color_white;
 }
 
 form input[type=submit], a.link_button_green, a.link_button_green_large {
@@ -221,7 +221,7 @@ a.link_button_green_large {
     border-radius: 0;
     font-size: inherit;
     &:focus{
-        background-color: $lightest-blue;
+        background-color: $color_ni_lightest_blue;
     }
   }
 }

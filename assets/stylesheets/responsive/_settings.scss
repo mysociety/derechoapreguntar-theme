@@ -10,47 +10,46 @@ $logo-highdpi-filename: 'logo@2.png'; //Should be at least 2x the size, in the s
 $logo-width: 150px;
 $logo-height: 149px;
 
-$dark-blue: #071339;
-$medium-blue: #2a4072;
-$lighter-blue: #475e90;
-$even-lighter-blue: #7e92bf;
-$lightest-blue: #cfd7e4;
+$color_white: #fff;
 
-$charcoal: #333;
-$medium-grey: #999;
-$lighter-gray: #d9d9d9;
-$white: #fff;
+$color_ni_dark_blue: #071339;
+$color_ni_medium_blue: #2a4072;
+$color_ni_lighter_blue: #475e90;
+$color_ni_even_lighter_blue: #7e92bf;
+$color_ni_lightest_blue: #cfd7e4;
+$color_ni_charcoal: #333;
+$color_ni_medium_grey: #999;
+$color_ni_lighter_gray: #d9d9d9;
 
-
-$locale-bg: $charcoal;
-$locale-color: $medium-grey;
-$locale-hover-color: $white;
-$link-color: $medium-blue;
-$body-font-color: $charcoal;
-$body-bg: $white;
-$button-bg: $lighter-blue;
-$button-color: $white;
-$heading-color: $charcoal;
+$locale-bg: $color_ni_charcoal;
+$locale-color: $color_ni_medium_grey;
+$locale-hover-color: $color_white;
+$link-color: $color_ni_medium_blue;
+$body-font-color: $color_ni_charcoal;
+$body-bg: $color_white;
+$button-bg: $color_ni_lighter_blue;
+$button-color: $color_white;
+$heading-color: $color_ni_charcoal;
 
 $font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $sans-serif-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-$main_menu-bg: $white;
-$main_menu-search_text: $charcoal;
-$main_menu-link_text: $dark-blue;
-$main_menu-search_bg: $white;
-$banner_bg: $white;
+$main_menu-bg: $color_white;
+$main_menu-search_text: $color_ni_charcoal;
+$main_menu-link_text: $color_ni_dark_blue;
+$main_menu-search_bg: $color_white;
+$banner_bg: $color_white;
 
-$main_menu-link_bg: $white;
-$main_menu-active_link_text: $dark-blue;
-$main_menu-active_link_bg: $even-lighter-blue;
-$footer-bg: $lighter-gray;
+$main_menu-link_bg: $color_white;
+$main_menu-active_link_text: $color_ni_dark_blue;
+$main_menu-active_link_bg: $color_ni_even_lighter_blue;
+$footer-bg: $color_ni_lighter_gray;
 $footer-color: $main_menu-link_text;
-$footer-link-color: $lighter-blue;
+$footer-link-color: $color_ni_lighter_blue;
 
 $incoming-correspondence-color: #0a9fc0;
 $outgoing-correspondence-color: #0b6298;
-$correspondence-bg: $white;
+$correspondence-bg: $color_white;
 $correspondence-shadow: #d3d3d3;
 
 $status-success: #aab26e;
