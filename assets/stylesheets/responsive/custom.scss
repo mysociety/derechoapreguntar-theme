@@ -1,3 +1,4 @@
+
 /* Mixin styles */
 
 /* Hide text when it's replaced by an image */
@@ -10,7 +11,10 @@
 /* General styling of nav menu items */
 %menu-item {
   text-decoration: none;
-  color: $color_white;
+  color: transparentize($color_white, 0.2);
+  @include ie8 {
+    color: $color_white;
+  }
   background-color: $main_menu-link_text;
   @include respond-min( $main_menu-mobile_menu_cutoff ){
     background-color: $color_white;
@@ -40,18 +44,6 @@
     &:hover{
         background-color: $color_white;
     }
-
-  }
-}
-
-/* Styling if not part of the main menu on larger screens */
-%sub-menu-item {
-  @include respond-min( $main_menu-mobile_menu_cutoff ){
-    color: transparentize($main_menu-link_text, 0.2);
-    &:hover{
-        background-color: $banner_bg;
-        color: transparentize($main_menu-link_text, 0);
-    }
   }
 }
 
@@ -65,8 +57,16 @@ body{
   font-family: $font-family;
 }
 
-a{
-  color: $link-color;
+a {
+  &:link,
+  &:visited {
+    color: $link-color;
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    color: darken($link-color, 10%);
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -109,58 +109,90 @@ input.use-datepicker[type=text] {
   background:image-url('calendar.png') no-repeat 100px 5px $color_white;
 }
 
-form input[type=submit], a.link_button_green, a.link_button_green_large {
-  text-decoration: none;
-  color: $button-color;
-  background-color: darken($button-bg, 5%);
+/* Button styles */
 
+@mixin button-base($size: normal, $disabled: false) {
+  padding: 0.5em 1.25em;
+  border-radius: 3px;
   display: inline-block;
-  cursor: pointer;
-  /* This style is expressed for all borders to avoid triggering an IE9 border rendering bug */
-  border-style: solid; border-color: darken($button-bg, 15%); border-width: 0 0 4px 0;
-  border-radius: 0;
-  padding: 3px 7px;
-  line-height: normal;
-  font-size: 1.1rem;
-  /* Same height as form elements */
-  height: 2.3125rem;
-  @include ie8 {
-     height: 2.3125em;
-     font-size: 1.1em;
-   }
-  vertical-align: top;
-  &:focus, &:hover{
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 300ms ease-out;
+  margin-bottom: 0;
+  font-family: $font-family;
+  @if $size == large {
+    font-size: 2.2em;
+  }
+  &:hover,
+  &:active,
+  &:focus {
     text-decoration: none;
-    background-color: darken($button-bg, 10%);
-    border-bottom: 4px solid darken($button-bg, 20%);
+    transition: background-color 300ms ease-out;
+  }
+  @if $disabled {
+    opacity: 0.333;
+    transition: none;
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: inherit;
+      color: inherit;
+      cursor: default;
+      transition: none;
+    }
   }
 }
 
-@include lte-ie7{
-
-  a.link_button_green, a.link_button_green_large {
-    padding: 0 7px;
-    height: 31px;
-    font-weight: bold;
+@mixin button-primary($args...) {
+  @include button-base($args...);
+  color: $color_white;
+  background-color: $button-bg;
+  border: none;
+  &:hover,
+  &:active,
+  &:focus,
+  &:visited:hover,
+  &:visited:active,
+  &:visited:focus {
+    background-color: darken($button-bg, 10%);
+    color: $color_white;
   }
+}
 
-  form input[type=submit] {
-    padding: 0;
-    height: 35px;
+@mixin button-secondary($args...) {
+  @include button-base($args...);
+  background-color: desaturate(darken($color_ni_even_lighter_blue, 10%), 5%);
+  color: $color_white;
+  font-weight: normal;
+  &:hover,
+  &:active,
+  &:focus {
+    color: $color_white;
+    background-color: desaturate(darken($color_ni_even_lighter_blue, 20%), 5%);
   }
+}
+
+@mixin button-tertiary($args...) {
+  @include button-base($args...);
+  background-color: desaturate(darken($color_ni_even_lighter_blue, 5%), 5%);;
+  color: $color_white;
+  font-weight: normal;
+  border: 1px solid desaturate(darken($color_ni_even_lighter_blue, 15%),5%);
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: darken($color_ni_even_lighter_blue, 7.5%);
+    border: 1px solid desaturate(darken($color_ni_even_lighter_blue, 25%),5%);
+  }
+}
+
+form input[type=submit], a.link_button_green, a.link_button_green_large {
+  @include button-primary;
+  text-decoration: none;
 }
 
 a.link_button_green_large {
-  font-size: 2.2rem;
-  height: inherit;
-  padding: 0 10px;
-  @include ie8 {
-     font-size: 2.2em;
-     height: 66px;
-   }
-   @include lte-ie7 {
-     height: 50px;
-   }
+  @include button-primary($size: large);
 }
 
 /* Popups */
@@ -180,6 +212,19 @@ a.link_button_green_large {
 
 #topnav {
   background-color: $main_menu-bg;
+}
+
+.site-title__logo {
+  // Smaller logo on mobiles
+  width: ($logo-width / 2);
+  height: ($logo-height / 2);
+  background-size: ($logo-width / 2) ($logo-height / 2);
+
+  @include respond-min( $main_menu-mobile_menu_cutoff ){
+    width: $logo-width;
+    height: $logo-height;
+    background-size: $logo-width $logo-height;
+  }
 }
 
 #navigation{
@@ -226,12 +271,14 @@ a.link_button_green_large {
   }
 }
 
-
+.greeting {
+  color: $body-bg;
+}
 /* Notices, errors */
 
-#notice, #error, .errorExplanation, #request_header_text, #hidden_request, .describe_state_form form, .undescribed_requests {
+#notice, #error, .errorExplanation, #request_header_text, #hidden_request, .describe_state_form form, .undescribed_requests, .warning {
   border-top: 10px solid;
-  font-size: 1.2em;
+  font-size: 1em;
   border-radius: 0;
   margin:1em 0;
   padding: 1.5em;
@@ -267,15 +314,24 @@ a.link_button_green_large {
 
 /* Logged and local options act like submenus */
 #logged_in_bar{
-  top: 0.75em;
+  @include respond-min($main_menu-mobile_menu_cutoff) {
+    top: 0.75em;
+  }
+
   a {
     @extend %menu-item;
-    @extend %sub-menu-item;
+    background-color: transparent;
     font-weight: normal;
+    color: $link-color;
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: transparent;
+    }
   }
   #logged_in_links {
     top: 4em;
-    .greeting, a {
+    a {
       font-weight: normal;
     }
   }
@@ -322,9 +378,8 @@ a.link_button_green_large {
 
   .rsp_menu_button{
     position: absolute;
-    top: 0;
-    /* 15px for margin minus 9 for background offset*/
-    right: 4px;
+    top: 5px; // vertically centre the button in the header
+    right: 4px; // 15px for margin minus 9 for background offset
     @extend .image-replacement;
     background-image: image-url('hamburger.png');
     background-repeat: no-repeat;
@@ -337,6 +392,13 @@ a.link_button_green_large {
     a {
       width: 100%;
       height: 100%;
+    }
+  }
+
+  &:target {
+    .rsp_menu_button {
+      top: 5px;
+      right: 4px;
     }
   }
 }
@@ -359,30 +421,21 @@ a.link_button_green_large {
 /* Request page */
 div.correspondence {
   background-color: $correspondence-bg;
-  padding-bottom: 0.5em;
-  .event_actions {
-    margin-bottom: 0;
-  }
+  box-shadow: 0 2px 2px transparentize($color_ni_charcoal, 0.8);
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 2em;
 }
 
 .incoming.correspondence {
-  border: none;
   border-top: 8px solid $incoming-correspondence-color;
-  box-shadow: 0 3px 3px $correspondence-shadow;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 0.9rem;
-  @include ie8 {
-    font-size: 0.9em;
-  }
   a.link_to_this {
     background-color: $incoming-correspondence-color;
   }
 }
 
 .outgoing.correspondence {
-  border: none;
   border-top: 8px solid $outgoing-correspondence-color;
-  box-shadow: 0 3px 3px $correspondence-shadow;
   a.link_to_this {
     background-color: $outgoing-correspondence-color;
   }
@@ -399,7 +452,7 @@ a.link_to_this {
   }
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 70% 70%;
+  background-size: 14px;
   border-radius: 50%;
   height: 20px;
   width: 20px;
@@ -428,6 +481,18 @@ a.link_to_this {
       border-color: $action-border;
     }
   }
+}
+
+.feed_link_sidebar .link_button_green {
+  @include button-primary();
+}
+
+.report-this-request {
+  @include button-secondary();
+  color: $color_white !important;
+  /* Using !important here as a temporary fix for a bad declaration (a:link)
+    in Alaveteli core. When this is fixed it can be removed.
+  */
 }
 
 /* Status lines and icons */
@@ -504,11 +569,42 @@ dt {
 
 /* Front page */
 /* Drop the extract indentation on small screens */
-#frontpage_examples .excerpt {
+#frontpage_examples {
+  .excerpt {
     padding: 0.2em 0 0 0;
     @include respond-min( $main_menu-mobile_menu_cutoff ){
       padding: 0 0 0 2em;
     }
+  }
+  p strong a {
+    @include button-secondary;
+  }
+}
+
+#frontpage-lead-button {
+  white-space: nowrap;
+}
+
+.latest-requests {
+  .button-secondary {
+    @include button-secondary;
+  }
+}
+
+/* Authority page */
+.action-bar__follower-count {
+  padding: 3px;
+  font-size: 1.1rem;
+}
+
+.action-bar__follow-button {
+  .link_button_green {
+    @include button-secondary();
+  }
+}
+
+.authority__body__sidebar form input[type=submit] {
+  @include button-secondary();
 }
 
 /* Icons for custom statuses */
