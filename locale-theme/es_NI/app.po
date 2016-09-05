@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # Gareth Rees <gareth@mysociety.org>, 2015
 # jbaezni <jbaezni@gmail.com>, 2015
@@ -10,22 +10,26 @@
 # louisecrow <louise@mysociety.org>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: alaveteli\n"
+"Project-Id-Version: derechoapreguntar-theme\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-23 12:14+0000\n"
 "PO-Revision-Date: 2015-06-03 22:17+0000\n"
 "Last-Translator: jbaezni <jbaezni@gmail.com>\n"
 "Language-Team: Spanish (Nicaragua) (http://www.transifex.com/mysociety/derechoapreguntar-theme/language/es_NI/)\n"
-"Language: es_NI\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es_NI\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "<p>Thank you! Hopefully your wait isn't too long.</p> <p>By law, you should get a response promptly, and normally before the end of <strong>\\n            {{date_response_required_by}}</strong>.</p>"
+msgid ""
+"<p>Thank you! Hopefully your wait isn't too long.</p> <p>By law, you should "
+"get a response promptly, and normally before the end of <strong>\\n"
+"            {{date_response_required_by}}</strong>.</p>"
 msgstr "<p>Gracias! </p> <p>Por ley, usted debe obtener una respuesta con prontitud, y normalmente antes del final de <strong>\\n {{date_response_required_by}}</strong>.</p>"
 
-msgid "<strong>Anything else</strong>, such as clarifying, prompting, thanking"
+msgid ""
+"<strong>Anything else</strong>, such as clarifying, prompting, thanking"
 msgstr "<strong> Todo lo demás, </strong>, como aclaración y agradecimientos."
 
 msgid "A project by"
@@ -100,10 +104,14 @@ msgstr "Se extiende el plazo."
 msgid "Domicile"
 msgstr "Domicilio"
 
-msgid "Don't want to address your message to {{person_or_body}}?  You can also write to:"
+msgid ""
+"Don't want to address your message to {{person_or_body}}?  You can also "
+"write to:"
 msgstr "¿Quiere dirigir su mensaje al contacto de {{person_or_body}}? También puede escribir a:"
 
-msgid "Edit and add <strong>more details</strong> to the message above,\\n                explaining why you are dissatisfied with their response."
+msgid ""
+"Edit and add <strong>more details</strong> to the message above,\\n"
+"                explaining why you are dissatisfied with their response."
 msgstr "Editar y añadir <strong> más detalles </strong> al mensaje anterior, \\n que explique por qué no está satisfecho con su respuesta."
 
 msgid "Exercise your right to know."
@@ -118,7 +126,10 @@ msgstr "La página de Facebook"
 #. "Follow ups" in this context means further
 #. messages sent by the requester to the authority after
 #. the initial request
-msgid "Follow ups and new responses to this request have been stopped to prevent spam. Please <a href=\"{{url}}\">contact us</a> if you are {{user_link}} and need to send a follow up."
+msgid ""
+"Follow ups and new responses to this request have been stopped to prevent "
+"spam. Please <a href=\"{{url}}\">contact us</a> if you are {{user_link}} and"
+" need to send a follow up."
 msgstr "Siga ups y nuevas respuestas a esta solicitud se han detenido para evitar el spam. Por favor, <a href=\"{{url}}\"> contáctenos </a> si usted es  {{user_link}} y necesita enviar un seguimiento."
 
 msgid "Follow us on twitter"
@@ -154,13 +165,18 @@ msgstr "Cédula de Identidad"
 msgid "Identity Card Number:"
 msgstr "Cédula de Identidad:"
 
-msgid "If you are dissatisfied by the response you got from\\n            the public authority, you have the right to\\n            complain (<a href=\"{{url}}\">details</a>)."
+msgid ""
+"If you are dissatisfied by the response you got from\\n            the "
+"public authority, you have the right to\\n            complain (<a "
+"href=\"{{url}}\">details</a>)."
 msgstr "Si no está satisfecho con la respuesta que obtuvo de la entidad pública, usted puede hacer uso de los recursos que establece la Ley 621 (<a href=\"{{url}}\">detalles</a>)."
 
 msgid "If you've used {{site_name}} before"
 msgstr "Si ha utilizado {{site_name}} antes"
 
-msgid "Is {{email_address}} the wrong address for {{type_of_request}} requests to {{public_body_name}}? If so, please contact us using this form:"
+msgid ""
+"Is {{email_address}} the wrong address for {{type_of_request}} requests to "
+"{{public_body_name}}? If so, please contact us using this form:"
 msgstr "¿Es {{email_address}} la dirección incorrecta para {{type_of_request}} estas solicitudes  {{public_body_name}}? Si es así, por favor póngase en contacto con nosotros mediante este formulario:"
 
 msgid "Make a Request"
@@ -187,13 +203,19 @@ msgstr "Clave"
 msgid "Password: (again)"
 msgstr "Contraseña: (de nuevo)"
 
-msgid "Please <strong>only</strong> write messages directly relating to your request {{request_link}}. If you would like to ask for information that was not in your original request, then <a href=\"{{new_request_link}}\">file a new request</a>."
+msgid ""
+"Please <strong>only</strong> write messages directly relating to your "
+"request {{request_link}}. If you would like to ask for information that was "
+"not in your original request, then <a href=\"{{new_request_link}}\">file a "
+"new request</a>."
 msgstr "Por favor, <strong> sólo </strong> escribir mensajes directamente relacionada con su solicitud {{request_link}}. Si desea solicitar información que no estaba en su solicitud original, entonces <a href=\"{{new_request_link}}\">presentar una nueva solicitud</a>."
 
 msgid "Please accept the Terms and Conditions"
 msgstr "Por favor, acepte los Términos y Condiciones"
 
-msgid "Please confirm that you have read the <a href=\"{{terms_url}}\">Terms of Use</a> and <a href=\"{{privacy_url}}\">Privacy Policy</a>."
+msgid ""
+"Please confirm that you have read the <a href=\"{{terms_url}}\">Terms of "
+"Use</a> and <a href=\"{{privacy_url}}\">Privacy Policy</a>."
 msgstr "Por favor, confirma que has leído las <a href=\"{{terms_url}}\"> Condiciones de Uso, </a> y <a href=\"{{privacy_url}}\"> Política de privacidad y que aceptas los mismos </a>."
 
 msgid "Please enter a valid date of birth"
@@ -214,7 +236,8 @@ msgstr "Por favor, introduzca su fecha de nacimiento"
 msgid "Please enter your domicile"
 msgstr "Introduzca su domicilio"
 
-msgid "Please enter your full name - it is required by law when making a request"
+msgid ""
+"Please enter your full name - it is required by law when making a request"
 msgstr "Por favor escriba su nombre completo - esto es requerido por ley al hacer una solicitud"
 
 msgid "Please enter your marital status"
@@ -235,7 +258,8 @@ msgstr "Política de privacidad"
 msgid "REDACTED"
 msgstr "REDACTAR"
 
-msgid "Remember me (keeps you signed in longer; do not use on a public computer)"
+msgid ""
+"Remember me (keeps you signed in longer; do not use on a public computer)"
 msgstr "Recuérdeme (mantenga accedido siempre, no utilizar en una computadora pública)"
 
 msgid "Request an internal review from {{person_or_body}}"
@@ -265,16 +289,26 @@ msgstr "Inscribirse"
 msgid "Terms of Use"
 msgstr "Condiciones de Uso"
 
-msgid "The authority has asked for an <strong>extension</strong> of the deadline for this request"
+msgid ""
+"The authority has asked for an <strong>extension</strong> of the deadline "
+"for this request"
 msgstr "La entidad hará uso de <strong>prórroga</strong> excepcional de 10 días."
 
-msgid "The response to your request has been <strong>delayed</strong>.  You can say that,\\n            by law, the authority should normally have responded\\n            <strong>promptly</strong> and"
+msgid ""
+"The response to your request has been <strong>delayed</strong>.  You can say"
+" that,\\n            by law, the authority should normally have responded\\n"
+"            <strong>promptly</strong> and"
 msgstr "La respuesta a su solicitud ha sido <strong>retrasada</strong>. Se puede decir que, \\ n por la ley, la autoridad debería normalmente haber respondido\\ n <strong>con prontitud</strong> y"
 
-msgid "The response to your request is <strong>long overdue</strong>.   You can say that, by\\n            law, under all circumstances, the authority should have responded\\n            by now"
+msgid ""
+"The response to your request is <strong>long overdue</strong>.   You can say"
+" that, by\\n            law, under all circumstances, the authority should "
+"have responded\\n            by now"
 msgstr "La respuesta a su solicitud <strong>se ha tardado demasiado tiempo</strong>. Se puede decir que, por la ley \\ n, en estas circunstancias, la entidad debería haber respondido \\ a estas alturas"
 
-msgid "Theme licensed under CC BY SA 3.0<br/>Creative Commons Attribution Share-Alike"
+msgid ""
+"Theme licensed under CC BY SA 3.0<br/>Creative Commons Attribution Share-"
+"Alike"
 msgstr "Contenido bajo licencia CC BY SA 3.0<br/>Creative Commons Attribution Share-Alike"
 
 msgid "Then you can change your email address used on {{site_name}}"
@@ -295,7 +329,9 @@ msgstr "Actualizado automáticamente después de guardar"
 msgid "We send the question for you"
 msgstr "Nosotros enviamos la pregunta por ti."
 
-msgid "We will not reveal your email address to anybody unless you or\\n        the law tell us to (<a href=\"{{url}}\">details</a>). "
+msgid ""
+"We will not reveal your email address to anybody unless you or\\n        the"
+" law tell us to (<a href=\"{{url}}\">details</a>). "
 msgstr "No revelaremos su dirección de correo electrónico a nadie, a menos que la ley nos lo indique  (<a href=\"{{url}}\">detalles</a>)."
 
 msgid "We'll notify you when there is an answer."
@@ -313,13 +349,12 @@ msgstr "¿Contestarán?"
 msgid "With the help of"
 msgstr "Con la ayuda de"
 
-msgid "Your <strong>name will appear publicly</strong>\\n        (<a href=\"{{why_url}}\">why?</a>)\\n        on this website and in search engines. If you\\n        are thinking of using a pseudonym, please\\n        <a href=\"{{help_url}}\">read this first</a>."
-msgstr ""
-"<strong>Tu nombre aparecerá públicamente</strong> \n"
-"        (<a href=\"{{why_url}}\">¿por qué?</a>)\n"
-"        en esta web y en motores de búsqueda. Si estás\n"
-"       pensando en utilizar un seudónimo, por favor \n"
-"        <a href=\"{{help_url}}\">lee esto primero</a>."
+msgid ""
+"Your <strong>name will appear publicly</strong>\\n        (<a "
+"href=\"{{why_url}}\">why?</a>)\\n        on this website and in search "
+"engines. If you\\n        are thinking of using a pseudonym, please\\n"
+"        <a href=\"{{help_url}}\">read this first</a>."
+msgstr "<strong>Tu nombre aparecerá públicamente</strong> \n        (<a href=\"{{why_url}}\">¿por qué?</a>)\n        en esta web y en motores de búsqueda. Si estás\n       pensando en utilizar un seudónimo, por favor \n        <a href=\"{{help_url}}\">lee esto primero</a>."
 
 msgid "Your General Law information was successfully updated"
 msgstr "La información de Ley General se ha actualizado correctamente"
@@ -368,5 +403,7 @@ msgstr "estado desconocido"
 msgid "what's that?"
 msgstr "que es eso?"
 
-msgid "{{public_body_name}} has asked for an extension of the deadline for this request. They should respond promptly and no later than {{response_date}}."
+msgid ""
+"{{public_body_name}} has asked for an extension of the deadline for this "
+"request. They should respond promptly and no later than {{response_date}}."
 msgstr "{{public_body_name}} ha pedido una ampliación del plazo para esta solicitud. Deben responder con prontitud o a mas tardar {{response_date}}."
