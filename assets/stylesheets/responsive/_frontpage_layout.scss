@@ -9,6 +9,8 @@ $dark-blue: #475e90;
     min-height: 375px;
   }
 
+  margin-bottom: 2em;
+
   #frontpage-intro-lead {
     @include grid-column(12);
     background-color: $light-grey;
