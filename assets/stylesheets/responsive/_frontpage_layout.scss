@@ -114,24 +114,7 @@ $dark-blue: #475e90;
       }
     }
 
-
-    #frontpage-lead-ad {
-      background-color: $darkest-blue;
-      text-align: center;
-      color: $light-grey;
-      h4 {
-        color: $light-grey;
-        margin: 0;
-        padding: 0.5em 0;
-      }
-      p {
-        font-style: italic;
-      }
-      a {
-        color: #fff;
-      }
-      border-radius: 5px;
-      padding: 0px 12px 12px 12px;
+    #frontpage-video {
       margin-bottom: 12px;
     }
   }
