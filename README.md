@@ -1,6 +1,8 @@
 Alavetelitheme
 ==============
 
+[![Build Status](https://travis-ci.org/mysociety/derechoapreguntar-theme.svg)](https://travis-ci.org/mysociety/derechoapreguntar-theme)
+
 This is a "hello world" type theme package for Alaveteli.
 
 The intention is to support simple overlaying of templates and

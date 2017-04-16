@@ -1,0 +1,49 @@
+language: ruby
+# branches:
+#   only:
+#     - master
+rvm:
+  - 1.8.7-p374
+  # - 1.9.3
+  # - 2.0.0
+env:
+  global:
+    - S3_REGION=us-east-1
+    - S3_BUCKET_NAME=alaveteli-bundle-cache
+    - secure: "H3/bA0aK9a+/2hpcrBwkWy33a3t65uef2z5bnl2LDKfSWpcIhtc+P4j0A0YXMRMek41WjOhsJL9J8vm5+mp3pwLUtsDVkd+ne5aUhusxmQDtHeV588KlObY0VPCYzD1dChJiM6Vn9Kw/eEd1YigB1RmX7yMTFguYOAMUEdUuzUg="
+before_install:
+  - git rev-parse HEAD
+  - CURRENT_SHA=`git rev-parse HEAD`
+  - rm -rfv *
+  - rm -rfv .git
+  - git clone -b rails-3-develop https://github.com/mysociety/alaveteli.git
+  - mkdir -p alaveteli-themes
+  - pushd alaveteli-themes
+  - git clone https://github.com/mysociety/derechoapreguntar-theme.git
+  - cd derechoapreguntar-theme
+  - git checkout $CURRENT_SHA
+  - popd
+  - cd alaveteli
+  - gem update --system 2.1.11
+  - gem install rake --version=0.9.2.2
+  - git submodule update --init --recursive
+  - psql -c "create database template_utf8 template template0 encoding 'UTF-8';" -U postgres
+  - psql -c "update pg_database set datistemplate=true where datname='template_utf8';" -U postgres
+  - psql -c "create database foi_test template template_utf8;" -U postgres
+  - cp config/database.yml-test config/database.yml
+  - cp config/general.yml-example config/general.yml
+  - cp config/newrelic.yml-example config/newrelic.yml
+  - sudo apt-get update
+  - export DEBIAN_FRONTEND=noninteractive
+  - sudo apt-get -y install exim4-daemon-light
+  - sudo apt-get -y install `cut -d " " -f 1 config/packages | egrep -v "(^#|wkhtml|bundler|^ruby$|^ruby1.8$|^rubygems$|^rake)"`
+  - RAILS_ENV=test ./script/rails-post-deploy
+  - RAILS_ENV=test ./script/update-xapian-index
+  - script/switch-theme.rb derechoapreguntar-theme
+install: echo 'Bundle installed through script/rails-post-deploy'
+script: bundle exec rake spec SPEC=lib/themes/derechoapreguntar-theme/spec
+# notifications:
+#   irc: "irc.freenode.org#alaveteli"
+#   email:
+#     recipients:
+#       - cron-whatdotheyknow@mysociety.org
